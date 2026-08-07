@@ -1,9 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Parallel Foundation + Windows Specialization Roadmap</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Parallel Foundation + Windows Specialization Roadmap — Linked Edition</title>
 <style>
 :root {
   --bg:#081018; --panel:#0f1b27; --panel2:#132334; --text:#ecf4fb; --muted:#9bb0c3;
@@ -61,1636 +62,1585 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 .footer-note{margin-top:50px;padding:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
 @media(max-width:650px){.wave-head{align-items:start;flex-direction:column}.wave-stat{text-align:left}.grid{grid-template-columns:1fr}}
 @media print{body{background:white;color:#111}.hero,.block,.stat,.callout,.milestone{background:white;color:#111;box-shadow:none} .lead,.wave-note,.muted,.footer-note{color:#444}}
+
+.resource-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.resource-link{display:inline-flex;align-items:center;gap:5px;text-decoration:none;padding:6px 9px;border-radius:9px;border:1px solid #315269;background:rgba(123,220,255,.07);color:#8ee3ff;font-size:.78rem;font-weight:750}
+.resource-link:hover{background:rgba(123,220,255,.14);border-color:#4f8ca9}
+.resource-link.secondary{color:#b7e9d5;border-color:#355f54;background:rgba(167,243,208,.05)}
+.no-link-note{margin-top:9px;padding:7px 9px;border-left:2px solid #6c7780;color:#9bb0c3;background:rgba(155,176,195,.04);font-size:.78rem}
 </style>
 </head>
 <body>
 <header class="hero">
 <div class="wrap">
-  <div class="kicker">Dependency-audited parallel curriculum · v3.0</div>
-  <h1>Foundation → Windows → Reverse Engineering → Cryptojacking Analysis</h1>
-  <p class="lead">Mathematics and programming start together. Independent branches progress in parallel. A knowledge block opens only after the blocks that actually supply its prerequisites are mastered—so unrelated mathematics, EE, breadth, or Windows work never becomes an artificial global gate.</p>
-  <div class="stats">
-    <div class="stat"><b>59</b><span>resources / categories preserved</span></div>
-    <div class="stat"><b>51</b><span>dependency-gated knowledge blocks</span></div>
-    <div class="stat"><b>14</b><span>earliest dependency waves</span></div>
-    <div class="stat"><b>17,745 h</b><span>total active-learning effort</span></div>
-    <div class="stat"><b>Wave 7</b><span>Windows Internals first becomes available</span></div>
-    <div class="stat"><b>Wave 14</b><span>cryptojacking synthesis becomes available</span></div>
-  </div>
+<div class="kicker">Dependency-audited parallel curriculum · v3.1 · linked edition</div>
+<h1>Foundation → Windows → Reverse Engineering → Cryptojacking Analysis</h1>
+<p class="lead">Mathematics and programming start together. Independent branches progress in parallel. A knowledge block opens only after the blocks that actually supply its prerequisites are mastered—so unrelated mathematics, EE, breadth, or Windows work never becomes an artificial global gate.</p>
+<div class="stats">
+<div class="stat"><b>59</b><span>resources / categories preserved</span></div>
+<div class="stat"><b>51</b><span>dependency-gated knowledge blocks</span></div>
+<div class="stat"><b>14</b><span>earliest dependency waves</span></div>
+<div class="stat"><b>17,745 h</b><span>total active-learning effort</span></div>
+<div class="stat"><b>Wave 7</b><span>Windows Internals first becomes available</span></div>
+<div class="stat"><b>Wave 14</b><span>cryptojacking synthesis becomes available</span></div>
+</div>
 </div>
 </header>
 <main>
-  <div class="callout">
-    <h2>How to read this roadmap</h2>
-    <p><b>Do not read the wave number as a semester.</b> It is only the earliest dependency depth. If your programming prerequisites for a systems block are finished, you may start that block even while an unrelated physics or breadth block from an earlier wave is still running.</p>
-    <p>A practical workload is usually <b>2–3 simultaneous deep lanes</b>: for example programming/systems + mathematics/engineering + one lighter support or breadth lane.</p>
-    <div class="legend">
-      <span>Core foundation</span><span>Windows specialization</span><span>Engineering</span><span>Advanced</span><span>Branch-specific</span><span>Background breadth</span>
-    </div>
-  </div>
-
-  <h2>Major specialization unlocks</h2>
-  <div class="milestones">
-      <div class="milestone">
-        <div class="m-wave">Wave 7</div>
-        <div>
-          <strong>Windows Internals may begin</strong>
-          <span>11 prerequisite resources · 3,805 h prerequisite effort</span>
-        </div>
-      </div>
-      <div class="milestone">
-        <div class="m-wave">Wave 10</div>
-        <div>
-          <strong>Windows PE/loader/trust analysis may begin</strong>
-          <span>24 prerequisite resources · 8,205 h prerequisite effort</span>
-        </div>
-      </div>
-      <div class="milestone">
-        <div class="m-wave">Wave 12</div>
-        <div>
-          <strong>Serious static Windows reverse engineering may begin</strong>
-          <span>26 prerequisite resources · 8,635 h prerequisite effort</span>
-        </div>
-      </div>
-      <div class="milestone">
-        <div class="m-wave">Wave 13</div>
-        <div>
-          <strong>Windows malware-analysis specialization may begin</strong>
-          <span>32 prerequisite resources · 10,445 h prerequisite effort</span>
-        </div>
-      </div>
-      <div class="milestone">
-        <div class="m-wave">Wave 10</div>
-        <div>
-          <strong>RandomX deep study may begin</strong>
-          <span>22 prerequisite resources · 7,505 h prerequisite effort</span>
-        </div>
-      </div>
-      <div class="milestone">
-        <div class="m-wave">Wave 11</div>
-        <div>
-          <strong>XMRig architecture study may begin</strong>
-          <span>24 prerequisite resources · 8,155 h prerequisite effort</span>
-        </div>
-      </div>
-      <div class="milestone">
-        <div class="m-wave">Wave 14</div>
-        <div>
-          <strong>Windows cryptojacking campaign synthesis may begin</strong>
-          <span>35 prerequisite resources · 11,315 h prerequisite effort</span>
-        </div>
-      </div></div>
-
-  
-    <section class="wave" id="wave-1">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 1</span>
-          <h2>Wave 1</h2>
-        </div>
-        <div class="wave-stat">1,575 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block core" id="block-K0">
-          <div class="block-top">
-            <span class="block-id">K0</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Programming &amp; Tooling Launch</h3>
-          <p class="lane">Programming / tooling</p>
-          <div class="dependency"><b>Requires blocks:</b> None — entry block</div>
-          <div class="block-hours"><b>695 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-001</span>
-        <span class="rtitle">The Missing Semester of Your CS Education (2026)</span>
-        <span class="hours">65 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 65 active-learning hours
+<div class="callout">
+<h2>How to read this roadmap</h2>
+<p><b>Do not read the wave number as a semester.</b> It is only the earliest dependency depth. If your programming prerequisites for a systems block are finished, you may start that block even while an unrelated physics or breadth block from an earlier wave is still running.</p>
+<p>A practical workload is usually <b>2–3 simultaneous deep lanes</b>: for example programming/systems + mathematics/engineering + one lighter support or breadth lane.</p>
+<div class="legend">
+<span>Core foundation</span><span>Windows specialization</span><span>Engineering</span><span>Advanced</span><span>Branch-specific</span><span>Background breadth</span>
+</div>
+<p><b>Resource links:</b> expand any resource card and use the linked button(s). Multi-source resources show their relevant official/reference components separately. Categories without a finalized resource are clearly marked rather than assigned an invented URL.</p></div>
+<h2>Major specialization unlocks</h2>
+<div class="milestones">
+<div class="milestone">
+<div class="m-wave">Wave 7</div>
+<div>
+<strong>Windows Internals may begin</strong>
+<span>11 prerequisite resources · 3,805 h prerequisite effort</span>
+</div>
+</div>
+<div class="milestone">
+<div class="m-wave">Wave 10</div>
+<div>
+<strong>Windows PE/loader/trust analysis may begin</strong>
+<span>24 prerequisite resources · 8,205 h prerequisite effort</span>
+</div>
+</div>
+<div class="milestone">
+<div class="m-wave">Wave 12</div>
+<div>
+<strong>Serious static Windows reverse engineering may begin</strong>
+<span>26 prerequisite resources · 8,635 h prerequisite effort</span>
+</div>
+</div>
+<div class="milestone">
+<div class="m-wave">Wave 13</div>
+<div>
+<strong>Windows malware-analysis specialization may begin</strong>
+<span>32 prerequisite resources · 10,445 h prerequisite effort</span>
+</div>
+</div>
+<div class="milestone">
+<div class="m-wave">Wave 10</div>
+<div>
+<strong>RandomX deep study may begin</strong>
+<span>22 prerequisite resources · 7,505 h prerequisite effort</span>
+</div>
+</div>
+<div class="milestone">
+<div class="m-wave">Wave 11</div>
+<div>
+<strong>XMRig architecture study may begin</strong>
+<span>24 prerequisite resources · 8,155 h prerequisite effort</span>
+</div>
+</div>
+<div class="milestone">
+<div class="m-wave">Wave 14</div>
+<div>
+<strong>Windows cryptojacking campaign synthesis may begin</strong>
+<span>35 prerequisite resources · 11,315 h prerequisite effort</span>
+</div>
+</div></div>
+<section class="wave" id="wave-1">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 1</span>
+<h2>Wave 1</h2>
+</div>
+<div class="wave-stat">1,575 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block core" id="block-K0">
+<div class="block-top">
+<span class="block-id">K0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Programming &amp; Tooling Launch</h3>
+<p class="lane">Programming / tooling</p>
+<div class="dependency"><b>Requires blocks:</b> None — entry block</div>
+<div class="block-hours"><b>695 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-001</span>
+<span class="rtitle">The Missing Semester of Your CS Education (2026)</span>
+<span class="hours">65 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 65 active-learning hours
         <span class="muted">(50–80 plausible)</span></p>
-        <p><b>Scope:</b> Complete the exercises; treat this as a compact bootcamp rather than a semester-length course.</p>
-        <div><b>Mastery evidence</b><ul><li>Maintain a Git repository, shell environment, debugger workflow, automation scripts, and reproducible notes.</li></ul></div>
-      </div>
-    </details>
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-002</span>
-        <span class="rtitle">Programming: Principles and Practice Using C++, Third Edition</span>
-        <span class="hours">630 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 630 active-learning hours
+<p><b>Scope:</b> Complete the exercises; treat this as a compact bootcamp rather than a semester-length course.</p>
+<div><b>Mastery evidence</b><ul><li>Maintain a Git repository, shell environment, debugger workflow, automation scripts, and reproducible notes.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://missing.csail.mit.edu/2026/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details>
+<details class="resource">
+<summary>
+<span class="rid">FND-002</span>
+<span class="rtitle">Programming: Principles and Practice Using C++, Third Edition</span>
+<span class="hours">630 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 630 active-learning hours
         <span class="muted">(490–810 plausible)</span></p>
-        <p><b>Scope:</b> Complete substantial exercises and at least one multi-file project. Python and data-science programming are not treated as prerequisites.</p>
-        <div><b>Mastery evidence</b><ul><li>Complete several multi-file C++ programs.</li><li>Use RAII, containers, classes, generic code, tests, debugging, and refactoring.</li><li>Explain design and ownership choices.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-M0">
-          <div class="block-top">
-            <span class="block-id">M0</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Mathematics Launch</h3>
-          <p class="lane">Mathematics</p>
-          <div class="dependency"><b>Requires blocks:</b> None — entry block</div>
-          <div class="block-hours"><b>230 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">ENG-MATH-001</span>
-        <span class="rtitle">Single Variable Calculus</span>
-        <span class="hours">230 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 230 active-learning hours
+<p><b>Scope:</b> Complete substantial exercises and at least one multi-file project. Python and data-science programming are not treated as prerequisites.</p>
+<div><b>Mastery evidence</b><ul><li>Complete several multi-file C++ programs.</li><li>Use RAII, containers, classes, generic code, tests, debugging, and refactoring.</li><li>Explain design and ownership choices.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://www.stroustrup.com/programming.html" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-M0">
+<div class="block-top">
+<span class="block-id">M0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Mathematics Launch</h3>
+<p class="lane">Mathematics</p>
+<div class="dependency"><b>Requires blocks:</b> None — entry block</div>
+<div class="block-hours"><b>230 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ENG-MATH-001</span>
+<span class="rtitle">Single Variable Calculus</span>
+<span class="hours">230 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 230 active-learning hours
         <span class="muted">(180–290 plausible)</span></p>
-        <p><b>Scope:</b> lectures; problem sets; problem-solving videos; exams</p>
-        <div><b>Mastery evidence</b><ul><li>Complete problem sets and at least two timed exams.</li><li>Use derivatives, integrals, series, and optimization in engineering problems.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block background" id="block-H4">
-          <div class="block-top">
-            <span class="block-id">H4</span>
-            <span class="badge">Background breadth</span>
-          </div>
-          <h3>History of Technology &amp; Arts Practice</h3>
-          <p class="lane">Human context</p>
-          <div class="dependency"><b>Requires blocks:</b> None — entry block</div>
-          <div class="block-hours"><b>430 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">BREADTH-006</span>
-        <span class="rtitle">History of Technology</span>
-        <span class="hours">200 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 200 active-learning hours
+<p><b>Scope:</b> lectures; problem sets; problem-solving videos; exams</p>
+<div><b>Mastery evidence</b><ul><li>Complete problem sets and at least two timed exams.</li><li>Use derivatives, integrals, series, and optimization in engineering problems.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block background" id="block-H4">
+<div class="block-top">
+<span class="block-id">H4</span>
+<span class="badge">Background breadth</span>
+</div>
+<h3>History of Technology &amp; Arts Practice</h3>
+<p class="lane">Human context</p>
+<div class="dependency"><b>Requires blocks:</b> None — entry block</div>
+<div class="block-hours"><b>430 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">BREADTH-006</span>
+<span class="rtitle">History of Technology</span>
+<span class="hours">200 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 200 active-learning hours
         <span class="muted">(130–300 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>historical research essay</li><li>source critique</li></ul></div>
-      </div>
-    </details>
-    <details class="resource">
-      <summary>
-        <span class="rid">BREADTH-008</span>
-        <span class="rtitle">Arts Practice</span>
-        <span class="hours">230 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 230 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>historical research essay</li><li>source critique</li></ul></div>
+<div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
+</details>
+<details class="resource">
+<summary>
+<span class="rid">BREADTH-008</span>
+<span class="rtitle">Arts Practice</span>
+<span class="hours">230 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 230 active-learning hours
         <span class="muted">(150–340 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>creative portfolio</li><li>reflection essay</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block background" id="block-SCI1">
-          <div class="block-top">
-            <span class="block-id">SCI1</span>
-            <span class="badge">Background breadth</span>
-          </div>
-          <h3>Biology</h3>
-          <p class="lane">Science breadth</p>
-          <div class="dependency"><b>Requires blocks:</b> None — entry block</div>
-          <div class="block-hours"><b>220 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">SCI-002</span>
-        <span class="rtitle">Introduction to Biology</span>
-        <span class="hours">220 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 220 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>creative portfolio</li><li>reflection essay</li></ul></div>
+<div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
+</details></div>
+</article>
+<article class="block background" id="block-SCI1">
+<div class="block-top">
+<span class="block-id">SCI1</span>
+<span class="badge">Background breadth</span>
+</div>
+<h3>Biology</h3>
+<p class="lane">Science breadth</p>
+<div class="dependency"><b>Requires blocks:</b> None — entry block</div>
+<div class="block-hours"><b>220 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">SCI-002</span>
+<span class="rtitle">Introduction to Biology</span>
+<span class="hours">220 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 220 active-learning hours
         <span class="muted">(160–300 plausible)</span></p>
-        <p><b>Scope:</b> lectures; problem sets; exams</p>
-        <div><b>Mastery evidence</b><ul><li>Complete selected molecular biology, genetics, cell biology, and evolution work.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-2">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 2</span>
-          <h2>Wave 2</h2>
-        </div>
-        <div class="wave-stat">1,655 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block core" id="block-K1">
-          <div class="block-top">
-            <span class="block-id">K1</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Software Discipline &amp; Low-Level Programming</h3>
-          <p class="lane">Programming / systems</p>
-          <div class="dependency"><b>Requires blocks:</b> K0</div>
-          <div class="block-hours"><b>470 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-003</span>
-        <span class="rtitle">Software Construction (MIT 6.005)</span>
-        <span class="hours">280 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 280 active-learning hours
+<p><b>Scope:</b> lectures; problem sets; exams</p>
+<div><b>Mastery evidence</b><ul><li>Complete selected molecular biology, genetics, cell biology, and evolution work.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/7-012-introduction-to-biology-fall-2004/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-2">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 2</span>
+<h2>Wave 2</h2>
+</div>
+<div class="wave-stat">1,655 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block core" id="block-K1">
+<div class="block-top">
+<span class="block-id">K1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Software Discipline &amp; Low-Level Programming</h3>
+<p class="lane">Programming / systems</p>
+<div class="dependency"><b>Requires blocks:</b> K0</div>
+<div class="block-hours"><b>470 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-003</span>
+<span class="rtitle">Software Construction (MIT 6.005)</span>
+<span class="hours">280 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 280 active-learning hours
         <span class="muted">(220–360 plausible)</span></p>
-        <p><b>Scope:</b> Use readings, problem sets, quizzes, and the final project. Translate Java-specific lessons into language-independent principles.</p>
-        <div><b>Mastery evidence</b><ul><li>Build a tested medium-sized application.</li><li>Write specifications and invariants.</li><li>Complete a concurrency analysis and design review.</li></ul></div>
-      </div>
-    </details>
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-004</span>
-        <span class="rtitle">Dive into Systems, Version 1.2 — selected C and debugging track</span>
-        <span class="hours">190 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 190 active-learning hours
+<p><b>Scope:</b> Use readings, problem sets, quizzes, and the final project. Translate Java-specific lessons into language-independent principles.</p>
+<div><b>Mastery evidence</b><ul><li>Build a tested medium-sized application.</li><li>Write specifications and invariants.</li><li>Complete a concurrency analysis and design review.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details>
+<details class="resource">
+<summary>
+<span class="rid">FND-004</span>
+<span class="rtitle">Dive into Systems, Version 1.2 — selected C and debugging track</span>
+<span class="hours">190 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 190 active-learning hours
         <span class="muted">(150–240 plausible)</span></p>
-        <p><b>Scope:</b> Prioritize the C, memory, compiling, debugging, and concurrency chapters. Skip or skim architecture/OS chapters later owned by DDCA, CS:APP, and OSTEP.</p>
-        <div><b>Mastery evidence</b><ul><li>Write C utilities.</li><li>Use sanitizers, debugger, and memory tools.</li><li>Explain pointers, layouts, stack/heap behavior, and undefined behavior.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-M1">
-          <div class="block-top">
-            <span class="block-id">M1</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Discrete Mathematics for Computing</h3>
-          <p class="lane">Mathematics / CS</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, M0</div>
-          <div class="block-hours"><b>260 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-005</span>
-        <span class="rtitle">Mathematics for Computer Science (MIT 6.1200J, 2024 materials)</span>
-        <span class="hours">260 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 260 active-learning hours
+<p><b>Scope:</b> Prioritize the C, memory, compiling, debugging, and concurrency chapters. Skip or skim architecture/OS chapters later owned by DDCA, CS:APP, and OSTEP.</p>
+<div><b>Mastery evidence</b><ul><li>Write C utilities.</li><li>Use sanitizers, debugger, and memory tools.</li><li>Explain pointers, layouts, stack/heap behavior, and undefined behavior.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://diveintosystems.org/book/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-M1">
+<div class="block-top">
+<span class="block-id">M1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Discrete Mathematics for Computing</h3>
+<p class="lane">Mathematics / CS</p>
+<div class="dependency"><b>Requires blocks:</b> K0, M0</div>
+<div class="block-hours"><b>260 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-005</span>
+<span class="rtitle">Mathematics for Computer Science (MIT 6.1200J, 2024 materials)</span>
+<span class="hours">260 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 260 active-learning hours
         <span class="muted">(200–330 plausible)</span></p>
-        <p><b>Scope:</b> Complete proof-heavy problem sets and timed assessments; reading notes alone is insufficient.</p>
-        <div><b>Mastery evidence</b><ul><li>Maintain a proof portfolio.</li><li>Solve graph, counting, recurrence, and discrete-probability problems.</li><li>Pass a timed cumulative assessment.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-M2">
-          <div class="block-top">
-            <span class="block-id">M2</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Linear &amp; Multivariable Mathematics</h3>
-          <p class="lane">Mathematics</p>
-          <div class="dependency"><b>Requires blocks:</b> M0</div>
-          <div class="block-hours"><b>445 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">ENG-MATH-002</span>
-        <span class="rtitle">Linear Algebra</span>
-        <span class="hours">205 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 205 active-learning hours
+<p><b>Scope:</b> Complete proof-heavy problem sets and timed assessments; reading notes alone is insufficient.</p>
+<div><b>Mastery evidence</b><ul><li>Maintain a proof portfolio.</li><li>Solve graph, counting, recurrence, and discrete-probability problems.</li><li>Pass a timed cumulative assessment.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-M2">
+<div class="block-top">
+<span class="block-id">M2</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Linear &amp; Multivariable Mathematics</h3>
+<p class="lane">Mathematics</p>
+<div class="dependency"><b>Requires blocks:</b> M0</div>
+<div class="block-hours"><b>445 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ENG-MATH-002</span>
+<span class="rtitle">Linear Algebra</span>
+<span class="hours">205 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 205 active-learning hours
         <span class="muted">(160–260 plausible)</span></p>
-        <p><b>Scope:</b> lectures; problem sets; exams; small computational exercises</p>
-        <div><b>Mastery evidence</b><ul><li>Solve systems and reason about vector spaces, eigenvalues, orthogonality, and factorizations.</li><li>Complete a small computational matrix project.</li></ul></div>
-      </div>
-    </details>
-    <details class="resource">
-      <summary>
-        <span class="rid">ENG-MATH-003</span>
-        <span class="rtitle">Multivariable Calculus</span>
-        <span class="hours">240 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 240 active-learning hours
+<p><b>Scope:</b> lectures; problem sets; exams; small computational exercises</p>
+<div><b>Mastery evidence</b><ul><li>Solve systems and reason about vector spaces, eigenvalues, orthogonality, and factorizations.</li><li>Complete a small computational matrix project.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details>
+<details class="resource">
+<summary>
+<span class="rid">ENG-MATH-003</span>
+<span class="rtitle">Multivariable Calculus</span>
+<span class="hours">240 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 240 active-learning hours
         <span class="muted">(190–310 plausible)</span></p>
-        <p><b>Scope:</b> lectures; problem sets; exams</p>
-        <div><b>Mastery evidence</b><ul><li>Solve partial-derivative, multiple-integral, vector-field, and coordinate-transformation problems.</li><li>Pass a cumulative exam.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block engineering" id="block-PH0">
-          <div class="block-top">
-            <span class="block-id">PH0</span>
-            <span class="badge">Engineering branch</span>
-          </div>
-          <h3>Physics I — Mechanics</h3>
-          <p class="lane">Physics / engineering</p>
-          <div class="dependency"><b>Requires blocks:</b> M0</div>
-          <div class="block-hours"><b>240 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">ENG-PHYS-001</span>
-        <span class="rtitle">Classical Mechanics</span>
-        <span class="hours">240 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 240 active-learning hours
+<p><b>Scope:</b> lectures; problem sets; exams</p>
+<div><b>Mastery evidence</b><ul><li>Solve partial-derivative, multiple-integral, vector-field, and coordinate-transformation problems.</li><li>Pass a cumulative exam.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block engineering" id="block-PH0">
+<div class="block-top">
+<span class="block-id">PH0</span>
+<span class="badge">Engineering branch</span>
+</div>
+<h3>Physics I — Mechanics</h3>
+<p class="lane">Physics / engineering</p>
+<div class="dependency"><b>Requires blocks:</b> M0</div>
+<div class="block-hours"><b>240 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ENG-PHYS-001</span>
+<span class="rtitle">Classical Mechanics</span>
+<span class="hours">240 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 240 active-learning hours
         <span class="muted">(190–310 plausible)</span></p>
-        <p><b>Scope:</b> lectures; problem sets; exams; available experiments</p>
-        <div><b>Mastery evidence</b><ul><li>Complete selected mechanics problem sets and a timed exam.</li><li>Demonstrate dimensional analysis, estimation, force, energy, momentum, and rotation reasoning.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block background" id="block-SCI0">
-          <div class="block-top">
-            <span class="block-id">SCI0</span>
-            <span class="badge">Background breadth</span>
-          </div>
-          <h3>Chemical Science</h3>
-          <p class="lane">Science breadth</p>
-          <div class="dependency"><b>Requires blocks:</b> M0</div>
-          <div class="block-hours"><b>240 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">SCI-001</span>
-        <span class="rtitle">Principles of Chemical Science</span>
-        <span class="hours">240 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 240 active-learning hours
+<p><b>Scope:</b> lectures; problem sets; exams; available experiments</p>
+<div><b>Mastery evidence</b><ul><li>Complete selected mechanics problem sets and a timed exam.</li><li>Demonstrate dimensional analysis, estimation, force, energy, momentum, and rotation reasoning.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block background" id="block-SCI0">
+<div class="block-top">
+<span class="block-id">SCI0</span>
+<span class="badge">Background breadth</span>
+</div>
+<h3>Chemical Science</h3>
+<p class="lane">Science breadth</p>
+<div class="dependency"><b>Requires blocks:</b> M0</div>
+<div class="block-hours"><b>240 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">SCI-001</span>
+<span class="rtitle">Principles of Chemical Science</span>
+<span class="hours">240 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 240 active-learning hours
         <span class="muted">(180–320 plausible)</span></p>
-        <p><b>Scope:</b> lectures; problem sets; exams</p>
-        <div><b>Mastery evidence</b><ul><li>Complete selected atomic structure, bonding, thermodynamics, equilibrium, and kinetics work.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-3">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 3</span>
-          <h2>Wave 3</h2>
-        </div>
-        <div class="wave-stat">1,385 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block core" id="block-C0">
-          <div class="block-top">
-            <span class="block-id">C0</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Digital Design &amp; Computer Architecture</h3>
-          <p class="lane">Architecture</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, M1</div>
-          <div class="block-hours"><b>420 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-008</span>
-        <span class="rtitle">Digital Design and Computer Architecture: RISC-V Edition</span>
-        <span class="hours">420 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 420 active-learning hours
+<p><b>Scope:</b> lectures; problem sets; exams</p>
+<div><b>Mastery evidence</b><ul><li>Complete selected atomic structure, bonding, thermodynamics, equilibrium, and kinetics work.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-3">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 3</span>
+<h2>Wave 3</h2>
+</div>
+<div class="wave-stat">1,385 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block core" id="block-C0">
+<div class="block-top">
+<span class="block-id">C0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Digital Design &amp; Computer Architecture</h3>
+<p class="lane">Architecture</p>
+<div class="dependency"><b>Requires blocks:</b> K0, M1</div>
+<div class="block-hours"><b>420 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-008</span>
+<span class="rtitle">Digital Design and Computer Architecture: RISC-V Edition</span>
+<span class="hours">420 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 420 active-learning hours
         <span class="muted">(330–540 plausible)</span></p>
-        <p><b>Scope:</b> Complete processor and cache design exercises, preferably in simulation.</p>
-        <div><b>Mastery evidence</b><ul><li>Design combinational and sequential circuits.</li><li>Implement or simulate a small processor.</li><li>Write RISC-V assembly.</li><li>Explain pipelines, hazards, caches, and address translation.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-M3">
-          <div class="block-top">
-            <span class="block-id">M3</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Differential Equations &amp; Probability</h3>
-          <p class="lane">Mathematics</p>
-          <div class="dependency"><b>Requires blocks:</b> M0, M1, M2</div>
-          <div class="block-hours"><b>505 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">ENG-MATH-004</span>
-        <span class="rtitle">Differential Equations (MIT 18.03SC)</span>
-        <span class="hours">235 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 235 active-learning hours
+<p><b>Scope:</b> Complete processor and cache design exercises, preferably in simulation.</p>
+<div><b>Mastery evidence</b><ul><li>Design combinational and sequential circuits.</li><li>Implement or simulate a small processor.</li><li>Write RISC-V assembly.</li><li>Explain pipelines, hazards, caches, and address translation.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://pages.hmc.edu/harris/ddca/ddcarv.html" rel="noopener noreferrer" target="_blank">Open resource ↗</a><a class="resource-link secondary" href="https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/" rel="noopener noreferrer" target="_blank">MIT Computation Structures (6.004) selected labs ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-M3">
+<div class="block-top">
+<span class="block-id">M3</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Differential Equations &amp; Probability</h3>
+<p class="lane">Mathematics</p>
+<div class="dependency"><b>Requires blocks:</b> M0, M1, M2</div>
+<div class="block-hours"><b>505 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ENG-MATH-004</span>
+<span class="rtitle">Differential Equations (MIT 18.03SC)</span>
+<span class="hours">235 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 235 active-learning hours
         <span class="muted">(180–300 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>Complete problem sets and exams.</li><li>Model and solve at least one circuit or dynamical system.</li><li>Explain stability and transform-domain solutions.</li></ul></div>
-      </div>
-    </details>
-    <details class="resource">
-      <summary>
-        <span class="rid">ENG-MATH-005</span>
-        <span class="rtitle">Probabilistic Systems Analysis and Applied Probability</span>
-        <span class="hours">270 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 270 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Complete problem sets and exams.</li><li>Model and solve at least one circuit or dynamical system.</li><li>Explain stability and transform-domain solutions.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details>
+<details class="resource">
+<summary>
+<span class="rid">ENG-MATH-005</span>
+<span class="rtitle">Probabilistic Systems Analysis and Applied Probability</span>
+<span class="hours">270 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 270 active-learning hours
         <span class="muted">(210–350 plausible)</span></p>
-        <p><b>Scope:</b> lectures; problem sets; exams</p>
-        <div><b>Mastery evidence</b><ul><li>Solve conditional probability, random-variable, expectation, Bayesian, and stochastic-process problems.</li><li>Complete a statistical-analysis report.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block engineering" id="block-PH1">
-          <div class="block-top">
-            <span class="block-id">PH1</span>
-            <span class="badge">Engineering branch</span>
-          </div>
-          <h3>Physics II — Electricity &amp; Magnetism</h3>
-          <p class="lane">Physics / engineering</p>
-          <div class="dependency"><b>Requires blocks:</b> M0, M2</div>
-          <div class="block-hours"><b>270 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">ENG-PHYS-002</span>
-        <span class="rtitle">Electricity and Magnetism</span>
-        <span class="hours">270 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 270 active-learning hours
+<p><b>Scope:</b> lectures; problem sets; exams</p>
+<div><b>Mastery evidence</b><ul><li>Solve conditional probability, random-variable, expectation, Bayesian, and stochastic-process problems.</li><li>Complete a statistical-analysis report.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block engineering" id="block-PH1">
+<div class="block-top">
+<span class="block-id">PH1</span>
+<span class="badge">Engineering branch</span>
+</div>
+<h3>Physics II — Electricity &amp; Magnetism</h3>
+<p class="lane">Physics / engineering</p>
+<div class="dependency"><b>Requires blocks:</b> M0, M2</div>
+<div class="block-hours"><b>270 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ENG-PHYS-002</span>
+<span class="rtitle">Electricity and Magnetism</span>
+<span class="hours">270 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 270 active-learning hours
         <span class="muted">(210–350 plausible)</span></p>
-        <p><b>Scope:</b> lectures; problem sets; exams; available experiments</p>
-        <div><b>Mastery evidence</b><ul><li>Complete field, potential, circuit, induction, and Maxwell-equation problem sets.</li><li>Pass a cumulative assessment.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block background" id="block-H1">
-          <div class="block-top">
-            <span class="block-id">H1</span>
-            <span class="badge">Background breadth</span>
-          </div>
-          <h3>Philosophy &amp; Formal Argument</h3>
-          <p class="lane">Human context</p>
-          <div class="dependency"><b>Requires blocks:</b> M1</div>
-          <div class="block-hours"><b>190 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">BREADTH-002</span>
-        <span class="rtitle">Philosophy and Formal Argument</span>
-        <span class="hours">190 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 190 active-learning hours
+<p><b>Scope:</b> lectures; problem sets; exams; available experiments</p>
+<div><b>Mastery evidence</b><ul><li>Complete field, potential, circuit, induction, and Maxwell-equation problem sets.</li><li>Pass a cumulative assessment.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2019/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block background" id="block-H1">
+<div class="block-top">
+<span class="block-id">H1</span>
+<span class="badge">Background breadth</span>
+</div>
+<h3>Philosophy &amp; Formal Argument</h3>
+<p class="lane">Human context</p>
+<div class="dependency"><b>Requires blocks:</b> M1</div>
+<div class="block-hours"><b>190 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">BREADTH-002</span>
+<span class="rtitle">Philosophy and Formal Argument</span>
+<span class="hours">190 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 190 active-learning hours
         <span class="muted">(120–280 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>essay portfolio</li><li>argument-analysis exercises</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-4">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 4</span>
-          <h2>Wave 4</h2>
-        </div>
-        <div class="wave-stat">1,530 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block core" id="block-C1">
-          <div class="block-top">
-            <span class="block-id">C1</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Algorithms &amp; Data Structures</h3>
-          <p class="lane">Computer science</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, K1, M1, M3</div>
-          <div class="block-hours"><b>450 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-007</span>
-        <span class="rtitle">Introduction to Algorithms, Fourth Edition — selected core and advanced chapters</span>
-        <span class="hours">450 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 450 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>essay portfolio</li><li>argument-analysis exercises</li></ul></div>
+<div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-4">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 4</span>
+<h2>Wave 4</h2>
+</div>
+<div class="wave-stat">1,530 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block core" id="block-C1">
+<div class="block-top">
+<span class="block-id">C1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Algorithms &amp; Data Structures</h3>
+<p class="lane">Computer science</p>
+<div class="dependency"><b>Requires blocks:</b> K0, K1, M1, M3</div>
+<div class="block-hours"><b>450 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-007</span>
+<span class="rtitle">Introduction to Algorithms, Fourth Edition — selected core and advanced chapters</span>
+<span class="hours">450 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 450 active-learning hours
         <span class="muted">(350–580 plausible)</span></p>
-        <p><b>Scope:</b> Master central chapters and selected advanced chapters. Do not read every specialist chapter merely to claim completion.</p>
-        <div><b>Mastery evidence</b><ul><li>Implement representative structures and algorithms.</li><li>Prove correctness and analyze complexity.</li><li>Pass graph and dynamic-programming assessments.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-S0">
-          <div class="block-top">
-            <span class="block-id">S0</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Machine-Level Systems</h3>
-          <p class="lane">Systems</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, K1, C0</div>
-          <div class="block-hours"><b>620 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-009</span>
-        <span class="rtitle">Computer Systems: A Programmer&#x27;s Perspective, Third Edition, with representative labs</span>
-        <span class="hours">620 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 620 active-learning hours
+<p><b>Scope:</b> Master central chapters and selected advanced chapters. Do not read every specialist chapter merely to claim completion.</p>
+<div><b>Mastery evidence</b><ul><li>Implement representative structures and algorithms.</li><li>Prove correctness and analyze complexity.</li><li>Pass graph and dynamic-programming assessments.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-S0">
+<div class="block-top">
+<span class="block-id">S0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Machine-Level Systems</h3>
+<p class="lane">Systems</p>
+<div class="dependency"><b>Requires blocks:</b> K0, K1, C0</div>
+<div class="block-hours"><b>620 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-009</span>
+<span class="rtitle">Computer Systems: A Programmer's Perspective, Third Edition, with representative labs</span>
+<span class="hours">620 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 620 active-learning hours
         <span class="muted">(480–790 plausible)</span></p>
-        <p><b>Scope:</b> Complete representative labs such as data, bomb, attack, cache, shell, malloc, proxy, or equivalent legally obtained variants.</p>
-        <div><b>Mastery evidence</b><ul><li>Complete representative data, bomb, attack, cache, shell, malloc, and proxy-style labs or safe equivalents.</li><li>Trace source to assembly, linking, memory, processes, and I/O.</li><li>Debug memory and concurrency failures.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block engineering" id="block-E0">
-          <div class="block-top">
-            <span class="block-id">E0</span>
-            <span class="badge">Engineering branch</span>
-          </div>
-          <h3>Circuits &amp; Electronics</h3>
-          <p class="lane">Electrical engineering</p>
-          <div class="dependency"><b>Requires blocks:</b> M0, M3, PH1</div>
-          <div class="block-hours"><b>300 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">EE-001</span>
-        <span class="rtitle">Circuits and Electronics (MIT 6.002)</span>
-        <span class="hours">300 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 300 active-learning hours
+<p><b>Scope:</b> Complete representative labs such as data, bomb, attack, cache, shell, malloc, proxy, or equivalent legally obtained variants.</p>
+<div><b>Mastery evidence</b><ul><li>Complete representative data, bomb, attack, cache, shell, malloc, and proxy-style labs or safe equivalents.</li><li>Trace source to assembly, linking, memory, processes, and I/O.</li><li>Debug memory and concurrency failures.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://csapp.cs.cmu.edu/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block engineering" id="block-E0">
+<div class="block-top">
+<span class="block-id">E0</span>
+<span class="badge">Engineering branch</span>
+</div>
+<h3>Circuits &amp; Electronics</h3>
+<p class="lane">Electrical engineering</p>
+<div class="dependency"><b>Requires blocks:</b> M0, M3, PH1</div>
+<div class="block-hours"><b>300 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">EE-001</span>
+<span class="rtitle">Circuits and Electronics (MIT 6.002)</span>
+<span class="hours">300 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 300 active-learning hours
         <span class="muted">(230–380 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>Solve complete circuit-analysis problem sets.</li><li>Simulate circuits with a SPICE-compatible tool.</li><li>Build or simulate amplifier, filter, and digital-interface labs.</li><li>Document measurement error and model limitations.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block advanced" id="block-M4">
-          <div class="block-top">
-            <span class="block-id">M4</span>
-            <span class="badge">Advanced expansion</span>
-          </div>
-          <h3>Mathematics Consolidation</h3>
-          <p class="lane">Mathematics</p>
-          <div class="dependency"><b>Requires blocks:</b> M2, M3</div>
-          <div class="block-hours"><b>160 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-006</span>
-        <span class="rtitle">Mathematics for Machine Learning — Chapters 2–7 as a mathematics consolidation</span>
-        <span class="hours">160 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 160 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Solve complete circuit-analysis problem sets.</li><li>Simulate circuits with a SPICE-compatible tool.</li><li>Build or simulate amplifier, filter, and digital-interface labs.</li><li>Document measurement error and model limitations.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block advanced" id="block-M4">
+<div class="block-top">
+<span class="block-id">M4</span>
+<span class="badge">Advanced expansion</span>
+</div>
+<h3>Mathematics Consolidation</h3>
+<p class="lane">Mathematics</p>
+<div class="dependency"><b>Requires blocks:</b> M2, M3</div>
+<div class="block-hours"><b>160 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-006</span>
+<span class="rtitle">Mathematics for Machine Learning — Chapters 2–7 as a mathematics consolidation</span>
+<span class="hours">160 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 160 active-learning hours
         <span class="muted">(120–220 plausible)</span></p>
-        <p><b>Scope:</b> Use Chapters 2–7. This does not preserve the full depth of MIT 18.01, 18.02, 18.06, and 6.041; it preserves their project-relevant mathematical core.</p>
-        <div><b>Mastery evidence</b><ul><li>Complete selected computational exercises connecting linear algebra, calculus, probability, and optimization.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-5">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 5</span>
-          <h2>Wave 5</h2>
-        </div>
-        <div class="wave-stat">2,140 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block core" id="block-N0">
-          <div class="block-top">
-            <span class="block-id">N0</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Computer Networking</h3>
-          <p class="lane">Networking</p>
-          <div class="dependency"><b>Requires blocks:</b> C1, S0</div>
-          <div class="block-hours"><b>400 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-014</span>
-        <span class="rtitle">Computer Networking: A Top-Down Approach, Ninth Edition, with Wireshark and socket labs</span>
-        <span class="hours">400 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 400 active-learning hours
+<p><b>Scope:</b> Use Chapters 2–7. This does not preserve the full depth of MIT 18.01, 18.02, 18.06, and 6.041; it preserves their project-relevant mathematical core.</p>
+<div><b>Mastery evidence</b><ul><li>Complete selected computational exercises connecting linear algebra, calculus, probability, and optimization.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://mml-book.github.io/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-5">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 5</span>
+<h2>Wave 5</h2>
+</div>
+<div class="wave-stat">2,140 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block core" id="block-N0">
+<div class="block-top">
+<span class="block-id">N0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Computer Networking</h3>
+<p class="lane">Networking</p>
+<div class="dependency"><b>Requires blocks:</b> C1, S0</div>
+<div class="block-hours"><b>400 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-014</span>
+<span class="rtitle">Computer Networking: A Top-Down Approach, Ninth Edition, with Wireshark and socket labs</span>
+<span class="hours">400 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 400 active-learning hours
         <span class="muted">(310–510 plausible)</span></p>
-        <p><b>Scope:</b> Complete socket programming and Wireshark labs. Stanford CS144 can be used later for deeper TCP-stack implementation.</p>
-        <div><b>Mastery evidence</b><ul><li>Build benign client-server software.</li><li>Analyze packet captures.</li><li>Explain DNS, HTTP, TLS roles, TCP state, routing, NAT, reliability, and congestion.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-P1">
-          <div class="block-top">
-            <span class="block-id">P1</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Performance Engineering</h3>
-          <p class="lane">Performance</p>
-          <div class="dependency"><b>Requires blocks:</b> C0, C1, S0</div>
-          <div class="block-hours"><b>400 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-012</span>
-        <span class="rtitle">Performance Engineering of Software Systems (MIT 6.172)</span>
-        <span class="hours">400 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 400 active-learning hours
+<p><b>Scope:</b> Complete socket programming and Wireshark labs. Stanford CS144 can be used later for deeper TCP-stack implementation.</p>
+<div><b>Mastery evidence</b><ul><li>Build benign client-server software.</li><li>Analyze packet captures.</li><li>Explain DNS, HTTP, TLS roles, TCP state, routing, NAT, reliability, and congestion.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://www-net.cs.umass.edu/kurose_ross/" rel="noopener noreferrer" target="_blank">Open resource ↗</a><a class="resource-link secondary" href="https://cs144.github.io/" rel="noopener noreferrer" target="_blank">Stanford CS144 selected network-stack labs ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-P1">
+<div class="block-top">
+<span class="block-id">P1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Performance Engineering</h3>
+<p class="lane">Performance</p>
+<div class="dependency"><b>Requires blocks:</b> C0, C1, S0</div>
+<div class="block-hours"><b>400 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-012</span>
+<span class="rtitle">Performance Engineering of Software Systems (MIT 6.172)</span>
+<span class="hours">400 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 400 active-learning hours
         <span class="muted">(310–510 plausible)</span></p>
-        <p><b>Scope:</b> Complete projects and before/after benchmark reports. Do not reduce the course to lecture viewing.</p>
-        <div><b>Mastery evidence</b><ul><li>Produce reproducible benchmarks.</li><li>Profile and optimize a native program.</li><li>Explain cache and parallel scaling behavior.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-S1">
-          <div class="block-top">
-            <span class="block-id">S1</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Operating Systems Concepts + x86-64 Fluency</h3>
-          <p class="lane">Systems</p>
-          <div class="dependency"><b>Requires blocks:</b> S0</div>
-          <div class="block-hours"><b>560 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-010</span>
-        <span class="rtitle">Operating Systems: Three Easy Pieces</span>
-        <span class="hours">360 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 360 active-learning hours
+<p><b>Scope:</b> Complete projects and before/after benchmark reports. Do not reduce the course to lecture viewing.</p>
+<div><b>Mastery evidence</b><ul><li>Produce reproducible benchmarks.</li><li>Profile and optimize a native program.</li><li>Explain cache and parallel scaling behavior.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-S1">
+<div class="block-top">
+<span class="block-id">S1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Operating Systems Concepts + x86-64 Fluency</h3>
+<p class="lane">Systems</p>
+<div class="dependency"><b>Requires blocks:</b> S0</div>
+<div class="block-hours"><b>560 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-010</span>
+<span class="rtitle">Operating Systems: Three Easy Pieces</span>
+<span class="hours">360 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 360 active-learning hours
         <span class="muted">(280–460 plausible)</span></p>
-        <p><b>Scope:</b> Complete simulations and selected coding projects in all three main sections: virtualization, concurrency, and persistence.</p>
-        <div><b>Mastery evidence</b><ul><li>Complete simulations and coding exercises.</li><li>Explain scheduling, address translation, synchronization, filesystems, storage, and crash consistency.</li></ul></div>
-      </div>
-    </details>
-    <details class="resource">
-      <summary>
-        <span class="rid">BRG-001</span>
-        <span class="rtitle">Architecture 1001: x86-64 Assembly</span>
-        <span class="hours">200 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 200 active-learning hours
+<p><b>Scope:</b> Complete simulations and selected coding projects in all three main sections: virtualization, concurrency, and persistence.</p>
+<div><b>Mastery evidence</b><ul><li>Complete simulations and coding exercises.</li><li>Explain scheduling, address translation, synchronization, filesystems, storage, and crash consistency.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://pages.cs.wisc.edu/~remzi/OSTEP/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details>
+<details class="resource">
+<summary>
+<span class="rid">BRG-001</span>
+<span class="rtitle">Architecture 1001: x86-64 Assembly</span>
+<span class="hours">200 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 200 active-learning hours
         <span class="muted">(160–260 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>Annotate disassemblies.</li><li>Trace calling conventions and stack frames.</li><li>Use an instruction-level debugger.</li><li>Compare compiler outputs.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-T0">
-          <div class="block-top">
-            <span class="block-id">T0</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Formal Languages, Computability &amp; Complexity</h3>
-          <p class="lane">Theory</p>
-          <div class="dependency"><b>Requires blocks:</b> M1, C1</div>
-          <div class="block-hours"><b>220 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">BRG-003</span>
-        <span class="rtitle">Automata, Computability, and Complexity (MIT 6.045J)</span>
-        <span class="hours">220 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 220 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Annotate disassemblies.</li><li>Trace calling conventions and stack frames.</li><li>Use an instruction-level debugger.</li><li>Compare compiler outputs.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Arch1001_x86-64_Asm+2021_v1/about" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-T0">
+<div class="block-top">
+<span class="block-id">T0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Formal Languages, Computability &amp; Complexity</h3>
+<p class="lane">Theory</p>
+<div class="dependency"><b>Requires blocks:</b> M1, C1</div>
+<div class="block-hours"><b>220 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">BRG-003</span>
+<span class="rtitle">Automata, Computability, and Complexity (MIT 6.045J)</span>
+<span class="hours">220 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 220 active-learning hours
         <span class="muted">(160–300 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>Complete formal-language, automata, decidability, and reduction problem sets.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block engineering" id="block-EE1">
-          <div class="block-top">
-            <span class="block-id">EE1</span>
-            <span class="badge">Engineering branch</span>
-          </div>
-          <h3>Signals &amp; Systems</h3>
-          <p class="lane">Electrical engineering</p>
-          <div class="dependency"><b>Requires blocks:</b> M2, M3, E0</div>
-          <div class="block-hours"><b>300 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">EE-002</span>
-        <span class="rtitle">Signals and Systems (MIT 6.003)</span>
-        <span class="hours">300 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 300 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Complete formal-language, automata, decidability, and reduction problem sets.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block engineering" id="block-EE1">
+<div class="block-top">
+<span class="block-id">EE1</span>
+<span class="badge">Engineering branch</span>
+</div>
+<h3>Signals &amp; Systems</h3>
+<p class="lane">Electrical engineering</p>
+<div class="dependency"><b>Requires blocks:</b> M2, M3, E0</div>
+<div class="block-hours"><b>300 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">EE-002</span>
+<span class="rtitle">Signals and Systems (MIT 6.003)</span>
+<span class="hours">300 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 300 active-learning hours
         <span class="muted">(230–380 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>Complete transform, convolution, sampling, and LTI-system problem sets.</li><li>Implement signal-analysis notebooks or programs.</li><li>Analyze one measured or simulated system in time and frequency domains.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block advanced" id="block-C2">
-          <div class="block-top">
-            <span class="block-id">C2</span>
-            <span class="badge">Advanced expansion</span>
-          </div>
-          <h3>Advanced Algorithms</h3>
-          <p class="lane">Computer science</p>
-          <div class="dependency"><b>Requires blocks:</b> C1</div>
-          <div class="block-hours"><b>260 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">ADV-CS-001</span>
-        <span class="rtitle">Design and Analysis of Algorithms</span>
-        <span class="hours">260 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 260 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Complete transform, convolution, sampling, and LTI-system problem sets.</li><li>Implement signal-analysis notebooks or programs.</li><li>Analyze one measured or simulated system in time and frequency domains.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block advanced" id="block-C2">
+<div class="block-top">
+<span class="block-id">C2</span>
+<span class="badge">Advanced expansion</span>
+</div>
+<h3>Advanced Algorithms</h3>
+<p class="lane">Computer science</p>
+<div class="dependency"><b>Requires blocks:</b> C1</div>
+<div class="block-hours"><b>260 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ADV-CS-001</span>
+<span class="rtitle">Design and Analysis of Algorithms</span>
+<span class="hours">260 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 260 active-learning hours
         <span class="muted">(200–350 plausible)</span></p>
-        <p><b>Scope:</b> lectures; problem sets; exams</p>
-        <div><b>Mastery evidence</b><ul><li>Complete selected randomized, amortized, flow, optimization, approximation, and hardness problem sets.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-6">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 6</span>
-          <h2>Wave 6</h2>
-        </div>
-        <div class="wave-stat">2,160 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block core" id="block-CR0">
-          <div class="block-top">
-            <span class="block-id">CR0</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Applied Cryptography</h3>
-          <p class="lane">Cryptography</p>
-          <div class="dependency"><b>Requires blocks:</b> M1, M3, N0</div>
-          <div class="block-hours"><b>300 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-015</span>
-        <span class="rtitle">A Graduate Course in Applied Cryptography, Version 0.6 — selected foundation chapters</span>
-        <span class="hours">300 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 300 active-learning hours
+<p><b>Scope:</b> lectures; problem sets; exams</p>
+<div><b>Mastery evidence</b><ul><li>Complete selected randomized, amortized, flow, optimization, approximation, and hardness problem sets.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-6">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 6</span>
+<h2>Wave 6</h2>
+</div>
+<div class="wave-stat">2,160 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block core" id="block-CR0">
+<div class="block-top">
+<span class="block-id">CR0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Applied Cryptography</h3>
+<p class="lane">Cryptography</p>
+<div class="dependency"><b>Requires blocks:</b> M1, M3, N0</div>
+<div class="block-hours"><b>300 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-015</span>
+<span class="rtitle">A Graduate Course in Applied Cryptography, Version 0.6 — selected foundation chapters</span>
+<span class="hours">300 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 300 active-learning hours
         <span class="muted">(230–380 plausible)</span></p>
-        <p><b>Scope:</b> Study the foundational symmetric, public-key, signature, and key-exchange chapters. Advanced MPC, threshold, and zero-knowledge chapters are later specialization.</p>
-        <div><b>Mastery evidence</b><ul><li>Solve selected exercises.</li><li>Analyze authenticated encryption, signatures, key exchange, hashing, and key management.</li><li>Implement only toy educational constructions.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-S2">
-          <div class="block-top">
-            <span class="block-id">S2</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Operating-System Implementation with xv6</h3>
-          <p class="lane">Systems</p>
-          <div class="dependency"><b>Requires blocks:</b> K1, C0, S0, S1</div>
-          <div class="block-hours"><b>550 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-011</span>
-        <span class="rtitle">Operating System Engineering (MIT 6.1810) with xv6/RISC-V</span>
-        <span class="hours">550 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 550 active-learning hours
+<p><b>Scope:</b> Study the foundational symmetric, public-key, signature, and key-exchange chapters. Advanced MPC, threshold, and zero-knowledge chapters are later specialization.</p>
+<div><b>Mastery evidence</b><ul><li>Solve selected exercises.</li><li>Analyze authenticated encryption, signatures, key exchange, hashing, and key management.</li><li>Implement only toy educational constructions.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://crypto.stanford.edu/~dabo/cryptobook/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-S2">
+<div class="block-top">
+<span class="block-id">S2</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Operating-System Implementation with xv6</h3>
+<p class="lane">Systems</p>
+<div class="dependency"><b>Requires blocks:</b> K1, C0, S0, S1</div>
+<div class="block-hours"><b>550 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-011</span>
+<span class="rtitle">Operating System Engineering (MIT 6.1810) with xv6/RISC-V</span>
+<span class="hours">550 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 550 active-learning hours
         <span class="muted">(430–700 plausible)</span></p>
-        <p><b>Scope:</b> Use a fixed course year and preserve that xv6 version. Complete substantial labs and written kernel-path explanations.</p>
-        <div><b>Mastery evidence</b><ul><li>Complete a substantial xv6 lab set.</li><li>Implement system calls, virtual-memory changes, synchronization, filesystem changes, and at least one driver or networking task.</li><li>Defend kernel paths orally.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block core" id="block-T1">
-          <div class="block-top">
-            <span class="block-id">T1</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Compiler Construction</h3>
-          <p class="lane">Compilers</p>
-          <div class="dependency"><b>Requires blocks:</b> C0, C1, S0, T0</div>
-          <div class="block-hours"><b>640 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-013</span>
-        <span class="rtitle">Engineering a Compiler, Third Edition, with one complete compiler project</span>
-        <span class="hours">640 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 640 active-learning hours
+<p><b>Scope:</b> Use a fixed course year and preserve that xv6 version. Complete substantial labs and written kernel-path explanations.</p>
+<div><b>Mastery evidence</b><ul><li>Complete a substantial xv6 lab set.</li><li>Implement system calls, virtual-memory changes, synchronization, filesystem changes, and at least one driver or networking task.</li><li>Defend kernel paths orally.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://pdos.csail.mit.edu/6.1810/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block core" id="block-T1">
+<div class="block-top">
+<span class="block-id">T1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Compiler Construction</h3>
+<p class="lane">Compilers</p>
+<div class="dependency"><b>Requires blocks:</b> C0, C1, S0, T0</div>
+<div class="block-hours"><b>640 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-013</span>
+<span class="rtitle">Engineering a Compiler, Third Edition, with one complete compiler project</span>
+<span class="hours">640 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 640 active-learning hours
         <span class="muted">(500–820 plausible)</span></p>
-        <p><b>Scope:</b> Build or substantially extend a compiler. A VM/interpreter may be a secondary project, not another required primary resource.</p>
-        <div><b>Mastery evidence</b><ul><li>Build a complete small compiler.</li><li>Implement parsing, semantic analysis, IR, CFGs, data-flow analysis, optimization, register allocation, and code generation.</li><li>Document lost source information.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block engineering" id="block-EE2">
-          <div class="block-top">
-            <span class="block-id">EE2</span>
-            <span class="badge">Engineering branch</span>
-          </div>
-          <h3>Microelectronics</h3>
-          <p class="lane">Electrical engineering</p>
-          <div class="dependency"><b>Requires blocks:</b> C0, PH1, E0, EE1</div>
-          <div class="block-hours"><b>290 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">EE-003</span>
-        <span class="rtitle">Microelectronic Devices and Circuits (MIT 6.012)</span>
-        <span class="hours">290 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 290 active-learning hours
+<p><b>Scope:</b> Build or substantially extend a compiler. A VM/interpreter may be a secondary project, not another required primary resource.</p>
+<div><b>Mastery evidence</b><ul><li>Build a complete small compiler.</li><li>Implement parsing, semantic analysis, IR, CFGs, data-flow analysis, optimization, register allocation, and code generation.</li><li>Document lost source information.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://shop.elsevier.com/books/engineering-a-compiler/cooper/978-0-12-815412-0" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block engineering" id="block-EE2">
+<div class="block-top">
+<span class="block-id">EE2</span>
+<span class="badge">Engineering branch</span>
+</div>
+<h3>Microelectronics</h3>
+<p class="lane">Electrical engineering</p>
+<div class="dependency"><b>Requires blocks:</b> C0, PH1, E0, EE1</div>
+<div class="block-hours"><b>290 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">EE-003</span>
+<span class="rtitle">Microelectronic Devices and Circuits (MIT 6.012)</span>
+<span class="hours">290 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 290 active-learning hours
         <span class="muted">(230–370 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>Complete device and circuit problem sets.</li><li>Analyze MOS and amplifier circuits.</li><li>Complete a circuit-design problem or simulation project.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block branch" id="block-G0">
-          <div class="block-top">
-            <span class="block-id">G0</span>
-            <span class="badge">Branch-specific</span>
-          </div>
-          <h3>Computer Graphics</h3>
-          <p class="lane">Graphics</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, M2, P1</div>
-          <div class="block-hours"><b>380 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">GFX-001</span>
-        <span class="rtitle">Computer Graphics</span>
-        <span class="hours">380 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 380 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Complete device and circuit problem sets.</li><li>Analyze MOS and amplifier circuits.</li><li>Complete a circuit-design problem or simulation project.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block branch" id="block-G0">
+<div class="block-top">
+<span class="block-id">G0</span>
+<span class="badge">Branch-specific</span>
+</div>
+<h3>Computer Graphics</h3>
+<p class="lane">Graphics</p>
+<div class="dependency"><b>Requires blocks:</b> K0, M2, P1</div>
+<div class="block-hours"><b>380 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">GFX-001</span>
+<span class="rtitle">Computer Graphics</span>
+<span class="hours">380 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 380 active-learning hours
         <span class="muted">(280–510 plausible)</span></p>
-        <p><b>Scope:</b> lectures; programming assignments; renderer project</p>
-        <div><b>Mastery evidence</b><ul><li>Build a renderer or implement core graphics algorithms.</li><li>Document transformations and performance.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-7">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 7</span>
-          <h2>Wave 7</h2>
-        </div>
-        <div class="wave-stat">1,610 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block core" id="block-SEC0">
-          <div class="block-top">
-            <span class="block-id">SEC0</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Foundations of Computer Security</h3>
-          <p class="lane">Security</p>
-          <div class="dependency"><b>Requires blocks:</b> S0, N0, S1, CR0</div>
-          <div class="block-hours"><b>370 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">BRG-002</span>
-        <span class="rtitle">Foundations of Computer Security (MIT 6.1600)</span>
-        <span class="hours">370 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 370 active-learning hours
+<p><b>Scope:</b> lectures; programming assignments; renderer project</p>
+<div><b>Mastery evidence</b><ul><li>Build a renderer or implement core graphics algorithms.</li><li>Document transformations and performance.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-837-computer-graphics-fall-2012/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-7">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 7</span>
+<h2>Wave 7</h2>
+</div>
+<div class="wave-stat">1,610 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block core" id="block-SEC0">
+<div class="block-top">
+<span class="block-id">SEC0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Foundations of Computer Security</h3>
+<p class="lane">Security</p>
+<div class="dependency"><b>Requires blocks:</b> S0, N0, S1, CR0</div>
+<div class="block-hours"><b>370 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">BRG-002</span>
+<span class="rtitle">Foundations of Computer Security (MIT 6.1600)</span>
+<span class="hours">370 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 370 active-learning hours
         <span class="muted">(290–470 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>Write threat models and security-property analyses.</li><li>Complete authorized fuzzing, isolation, runtime-defense, or symbolic-execution laboratories.</li><li>Report assumptions and limitations.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block specialization" id="block-W0">
-          <div class="block-top">
-            <span class="block-id">W0</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>Windows Internals I</h3>
-          <p class="lane">Windows</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, K1, C0, S0, S1, S2</div>
-          <div class="block-hours"><b>420 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-001</span>
-        <span class="rtitle">Windows Internals, 7th Edition — Part 1</span>
-        <span class="hours">420 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 420 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Write threat models and security-property analyses.</li><li>Complete authorized fuzzing, isolation, runtime-defense, or symbolic-execution laboratories.</li><li>Report assumptions and limitations.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://61600.csail.mit.edu/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block specialization" id="block-W0">
+<div class="block-top">
+<span class="block-id">W0</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>Windows Internals I</h3>
+<p class="lane">Windows</p>
+<div class="dependency"><b>Requires blocks:</b> K0, K1, C0, S0, S1, S2</div>
+<div class="block-hours"><b>420 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-001</span>
+<span class="rtitle">Windows Internals, 7th Edition — Part 1</span>
+<span class="hours">420 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 420 active-learning hours
         <span class="muted">(330–540 plausible)</span></p>
-        <p><b>Scope:</b> system architecture; processes and jobs; threads and scheduling; objects and handles; security and access tokens</p>
-        <div><b>Mastery evidence</b><ul><li>Explain a Windows process from creation to running threads and mapped address space.</li><li>Explain handles, objects, access tokens, virtual memory and I/O using Windows terminology.</li><li>Use Windows inspection tools to connect textbook concepts with observable system state.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block advanced" id="block-ADV0">
-          <div class="block-top">
-            <span class="block-id">ADV0</span>
-            <span class="badge">Advanced expansion</span>
-          </div>
-          <h3>Advanced Computer Architecture</h3>
-          <p class="lane">Architecture</p>
-          <div class="dependency"><b>Requires blocks:</b> C0, P1, EE2</div>
-          <div class="block-hours"><b>420 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">ADV-ARCH-001</span>
-        <span class="rtitle">Constructive Computer Architecture</span>
-        <span class="hours">420 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 420 active-learning hours
+<p><b>Scope:</b> system architecture; processes and jobs; threads and scheduling; objects and handles; security and access tokens</p>
+<div><b>Mastery evidence</b><ul><li>Explain a Windows process from creation to running threads and mapped address space.</li><li>Explain handles, objects, access tokens, virtual memory and I/O using Windows terminology.</li><li>Use Windows inspection tools to connect textbook concepts with observable system state.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/sysinternals/resources/windows-internals" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block advanced" id="block-ADV0">
+<div class="block-top">
+<span class="block-id">ADV0</span>
+<span class="badge">Advanced expansion</span>
+</div>
+<h3>Advanced Computer Architecture</h3>
+<p class="lane">Architecture</p>
+<div class="dependency"><b>Requires blocks:</b> C0, P1, EE2</div>
+<div class="block-hours"><b>420 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ADV-ARCH-001</span>
+<span class="rtitle">Constructive Computer Architecture</span>
+<span class="hours">420 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 420 active-learning hours
         <span class="muted">(320–570 plausible)</span></p>
-        <p><b>Scope:</b> HDL exercises; pipelined processor; cache project; simulated multicore work</p>
-        <div><b>Mastery evidence</b><ul><li>Implement or simulate a pipelined processor, cache, or multicore component.</li><li>Write an architecture design report.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block branch" id="block-G1">
-          <div class="block-top">
-            <span class="block-id">G1</span>
-            <span class="badge">Branch-specific</span>
-          </div>
-          <h3>Game Engine Architecture</h3>
-          <p class="lane">Game systems</p>
-          <div class="dependency"><b>Requires blocks:</b> S0, G0</div>
-          <div class="block-hours"><b>400 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">BRG-005</span>
-        <span class="rtitle">Game Engine Architecture, Fourth Edition, Two-Volume Set</span>
-        <span class="hours">400 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 400 active-learning hours
+<p><b>Scope:</b> HDL exercises; pipelined processor; cache project; simulated multicore work</p>
+<div><b>Mastery evidence</b><ul><li>Implement or simulate a pipelined processor, cache, or multicore component.</li><li>Write an architecture design report.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://csg.csail.mit.edu/6.175/" rel="noopener noreferrer" target="_blank">MIT Constructive Computer Architecture ↗</a></div></div>
+</details></div>
+</article>
+<article class="block branch" id="block-G1">
+<div class="block-top">
+<span class="block-id">G1</span>
+<span class="badge">Branch-specific</span>
+</div>
+<h3>Game Engine Architecture</h3>
+<p class="lane">Game systems</p>
+<div class="dependency"><b>Requires blocks:</b> S0, G0</div>
+<div class="block-hours"><b>400 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">BRG-005</span>
+<span class="rtitle">Game Engine Architecture, Fourth Edition, Two-Volume Set</span>
+<span class="hours">400 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 400 active-learning hours
         <span class="muted">(300–540 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>Document the architecture of a small engine or engine subsystem.</li><li>Build or extend a legitimate game-system component.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-8">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 8</span>
-          <h2>Wave 8</h2>
-        </div>
-        <div class="wave-stat">1,670 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block core" id="block-SEC1">
-          <div class="block-top">
-            <span class="block-id">SEC1</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Security Engineering</h3>
-          <p class="lane">Security</p>
-          <div class="dependency"><b>Requires blocks:</b> N0, S1, CR0, SEC0</div>
-          <div class="block-hours"><b>350 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">FND-016</span>
-        <span class="rtitle">Security Engineering: A Guide to Building Dependable Distributed Systems, Third Edition</span>
-        <span class="hours">350 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 350 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Document the architecture of a small engine or engine subsystem.</li><li>Build or extend a legitimate game-system component.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://www.routledge.com/Game-Engine-Architecture-Two-Volume-Set/Gregory/p/book/9781041162599" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-8">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 8</span>
+<h2>Wave 8</h2>
+</div>
+<div class="wave-stat">1,670 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block core" id="block-SEC1">
+<div class="block-top">
+<span class="block-id">SEC1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Security Engineering</h3>
+<p class="lane">Security</p>
+<div class="dependency"><b>Requires blocks:</b> N0, S1, CR0, SEC0</div>
+<div class="block-hours"><b>350 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">FND-016</span>
+<span class="rtitle">Security Engineering: A Guide to Building Dependable Distributed Systems, Third Edition</span>
+<span class="hours">350 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 350 active-learning hours
         <span class="muted">(270–450 plausible)</span></p>
-        <p><b>Scope:</b> Use case analyses and threat-model reports. It does not replace hands-on malware analysis, forensics, or a dedicated security laboratory.</p>
-        <div><b>Mastery evidence</b><ul><li>Produce structured analyses of assets, actors, trust boundaries, incentives, controls, and failure modes.</li><li>Compare security mechanisms across domains.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block specialization" id="block-W1">
-          <div class="block-top">
-            <span class="block-id">W1</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>Windows System Programming I</h3>
-          <p class="lane">Windows</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, K1, S0, W0</div>
-          <div class="block-hours"><b>300 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-002</span>
-        <span class="rtitle">Windows 10 System Programming — Part 1</span>
-        <span class="hours">300 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 300 active-learning hours
+<p><b>Scope:</b> Use case analyses and threat-model reports. It does not replace hands-on malware analysis, forensics, or a dedicated security laboratory.</p>
+<div><b>Mastery evidence</b><ul><li>Produce structured analyses of assets, actors, trust boundaries, incentives, controls, and failure modes.</li><li>Compare security mechanisms across domains.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://www.cl.cam.ac.uk/archive/rja14/book.html" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block specialization" id="block-W1">
+<div class="block-top">
+<span class="block-id">W1</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>Windows System Programming I</h3>
+<p class="lane">Windows</p>
+<div class="dependency"><b>Requires blocks:</b> K0, K1, S0, W0</div>
+<div class="block-hours"><b>300 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-002</span>
+<span class="rtitle">Windows 10 System Programming — Part 1</span>
+<span class="hours">300 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 300 active-learning hours
         <span class="muted">(230–390 plausible)</span></p>
-        <p><b>Scope:</b> Windows architecture from the programmer perspective; DLL fundamentals; objects and handles; process creation and management; threads</p>
-        <div><b>Mastery evidence</b><ul><li>Build an owned process/thread inspection utility.</li><li>Build a small DLL/plugin-based application.</li><li>Explain each major API in terms of the Windows mechanism it changes.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block advanced" id="block-SYS0">
-          <div class="block-top">
-            <span class="block-id">SYS0</span>
-            <span class="badge">Advanced expansion</span>
-          </div>
-          <h3>Computer System Engineering</h3>
-          <p class="lane">Systems design</p>
-          <div class="dependency"><b>Requires blocks:</b> K1, N0, S1, S2, SEC0</div>
-          <div class="block-hours"><b>310 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">BRG-004</span>
-        <span class="rtitle">Computer System Engineering (MIT 6.033)</span>
-        <span class="hours">310 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 310 active-learning hours
+<p><b>Scope:</b> Windows architecture from the programmer perspective; DLL fundamentals; objects and handles; process creation and management; threads</p>
+<div><b>Mastery evidence</b><ul><li>Build an owned process/thread inspection utility.</li><li>Build a small DLL/plugin-based application.</li><li>Explain each major API in terms of the Windows mechanism it changes.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://leanpub.com/windows10systemprogramming" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block advanced" id="block-SYS0">
+<div class="block-top">
+<span class="block-id">SYS0</span>
+<span class="badge">Advanced expansion</span>
+</div>
+<h3>Computer System Engineering</h3>
+<p class="lane">Systems design</p>
+<div class="dependency"><b>Requires blocks:</b> K1, N0, S1, S2, SEC0</div>
+<div class="block-hours"><b>310 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">BRG-004</span>
+<span class="rtitle">Computer System Engineering (MIT 6.033)</span>
+<span class="hours">310 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 310 active-learning hours
         <span class="muted">(240–400 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>Write and revise a substantial system-design report.</li><li>Analyze failure, naming, modularity, security, atomicity, and recovery.</li><li>Present and defend the design.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block branch" id="block-G2">
-          <div class="block-top">
-            <span class="block-id">G2</span>
-            <span class="badge">Branch-specific</span>
-          </div>
-          <h3>Game Construction</h3>
-          <p class="lane">Game systems</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, G0, G1</div>
-          <div class="block-hours"><b>330 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">GAME-001</span>
-        <span class="rtitle">Creating Video Games</span>
-        <span class="hours">330 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 330 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Write and revise a substantial system-design report.</li><li>Analyze failure, naming, modularity, security, atomicity, and recovery.</li><li>Present and defend the design.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block branch" id="block-G2">
+<div class="block-top">
+<span class="block-id">G2</span>
+<span class="badge">Branch-specific</span>
+</div>
+<h3>Game Construction</h3>
+<p class="lane">Game systems</p>
+<div class="dependency"><b>Requires blocks:</b> K0, G0, G1</div>
+<div class="block-hours"><b>330 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">GAME-001</span>
+<span class="rtitle">Creating Video Games</span>
+<span class="hours">330 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 330 active-learning hours
         <span class="muted">(250–450 plausible)</span></p>
-        <p><b>Scope:</b> course materials; small game or engine component; playtesting; postmortem</p>
-        <div><b>Mastery evidence</b><ul><li>Build a small game or engine component.</li><li>Conduct playtesting and write a postmortem.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block background" id="block-H2">
-          <div class="block-top">
-            <span class="block-id">H2</span>
-            <span class="badge">Background breadth</span>
-          </div>
-          <h3>Ethics, Law &amp; Institutions</h3>
-          <p class="lane">Human context</p>
-          <div class="dependency"><b>Requires blocks:</b> SEC0</div>
-          <div class="block-hours"><b>380 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">BREADTH-003</span>
-        <span class="rtitle">Ethics of Technology and Computing</span>
-        <span class="hours">180 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 180 active-learning hours
+<p><b>Scope:</b> course materials; small game or engine component; playtesting; postmortem</p>
+<div><b>Mastery evidence</b><ul><li>Build a small game or engine component.</li><li>Conduct playtesting and write a postmortem.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/cms-611j-creating-video-games-fall-2014/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block background" id="block-H2">
+<div class="block-top">
+<span class="block-id">H2</span>
+<span class="badge">Background breadth</span>
+</div>
+<h3>Ethics, Law &amp; Institutions</h3>
+<p class="lane">Human context</p>
+<div class="dependency"><b>Requires blocks:</b> SEC0</div>
+<div class="block-hours"><b>380 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">BREADTH-003</span>
+<span class="rtitle">Ethics of Technology and Computing</span>
+<span class="hours">180 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 180 active-learning hours
         <span class="muted">(120–270 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>ethics case portfolio</li><li>final position paper</li></ul></div>
-      </div>
-    </details>
-    <details class="resource">
-      <summary>
-        <span class="rid">BREADTH-005</span>
-        <span class="rtitle">Political Science, Law, or International Relations</span>
-        <span class="hours">200 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 200 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>ethics case portfolio</li><li>final position paper</li></ul></div>
+<div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
+</details>
+<details class="resource">
+<summary>
+<span class="rid">BREADTH-005</span>
+<span class="rtitle">Political Science, Law, or International Relations</span>
+<span class="hours">200 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 200 active-learning hours
         <span class="muted">(130–300 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>policy analysis</li><li>case-study report</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-9">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 9</span>
-          <h2>Wave 9</h2>
-        </div>
-        <div class="wave-stat">2,020 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block core" id="block-SEC2">
-          <div class="block-top">
-            <span class="block-id">SEC2</span>
-            <span class="badge">Core foundation</span>
-          </div>
-          <h3>Advanced Computer Systems Security</h3>
-          <p class="lane">Security</p>
-          <div class="dependency"><b>Requires blocks:</b> S2, SEC0, SEC1</div>
-          <div class="block-hours"><b>320 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">ADV-SEC-001</span>
-        <span class="rtitle">Computer Systems Security</span>
-        <span class="hours">320 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 320 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>policy analysis</li><li>case-study report</li></ul></div>
+<div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-9">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 9</span>
+<h2>Wave 9</h2>
+</div>
+<div class="wave-stat">2,020 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block core" id="block-SEC2">
+<div class="block-top">
+<span class="block-id">SEC2</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Advanced Computer Systems Security</h3>
+<p class="lane">Security</p>
+<div class="dependency"><b>Requires blocks:</b> S2, SEC0, SEC1</div>
+<div class="block-hours"><b>320 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ADV-SEC-001</span>
+<span class="rtitle">Computer Systems Security</span>
+<span class="hours">320 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 320 active-learning hours
         <span class="muted">(240–430 plausible)</span></p>
-        <p><b>Scope:</b> lectures; paper readings; authorized labs; research critiques</p>
-        <div><b>Mastery evidence</b><ul><li>Maintain a paper-review portfolio.</li><li>Complete controlled security labs and a design project.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block specialization" id="block-W2">
-          <div class="block-top">
-            <span class="block-id">W2</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>Windows System Programming II</h3>
-          <p class="lane">Windows</p>
-          <div class="dependency"><b>Requires blocks:</b> C0, S0, P1, W1</div>
-          <div class="block-hours"><b>320 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-003</span>
-        <span class="rtitle">Windows 10 System Programming — Part 2</span>
-        <span class="hours">320 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 320 active-learning hours
+<p><b>Scope:</b> lectures; paper readings; authorized labs; research critiques</p>
+<div><b>Mastery evidence</b><ul><li>Maintain a paper-review portfolio.</li><li>Complete controlled security labs and a design project.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-5660-computer-systems-security-spring-2024/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block specialization" id="block-W2">
+<div class="block-top">
+<span class="block-id">W2</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>Windows System Programming II</h3>
+<p class="lane">Windows</p>
+<div class="dependency"><b>Requires blocks:</b> C0, S0, P1, W1</div>
+<div class="block-hours"><b>320 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-003</span>
+<span class="rtitle">Windows 10 System Programming — Part 2</span>
+<span class="hours">320 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 320 active-learning hours
         <span class="muted">(240–420 plausible)</span></p>
-        <p><b>Scope:</b> VirtualAlloc-family memory APIs; memory protection; working sets; heaps; large pages</p>
-        <div><b>Mastery evidence</b><ul><li>Build a visible lab program that allocates, protects and maps memory in several legitimate ways.</li><li>Measure working-set and memory effects using Windows inspection tools.</li><li>Explain large pages and NUMA effects conceptually and experimentally.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block specialization" id="block-W3">
-          <div class="block-top">
-            <span class="block-id">W3</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>Windows Internals II — Analysis-Relevant Topics</h3>
-          <p class="lane">Windows</p>
-          <div class="dependency"><b>Requires blocks:</b> W1</div>
-          <div class="block-hours"><b>260 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SUPPORT-001</span>
-        <span class="rtitle">Windows Internals, 7th Edition — Part 2 (selected chapters)</span>
-        <span class="hours">260 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 260 active-learning hours
+<p><b>Scope:</b> VirtualAlloc-family memory APIs; memory protection; working sets; heaps; large pages</p>
+<div><b>Mastery evidence</b><ul><li>Build a visible lab program that allocates, protects and maps memory in several legitimate ways.</li><li>Measure working-set and memory effects using Windows inspection tools.</li><li>Explain large pages and NUMA effects conceptually and experimentally.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://leanpub.com/windows10systemprogrammingpart2" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block specialization" id="block-W3">
+<div class="block-top">
+<span class="block-id">W3</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>Windows Internals II — Analysis-Relevant Topics</h3>
+<p class="lane">Windows</p>
+<div class="dependency"><b>Requires blocks:</b> W1</div>
+<div class="block-hours"><b>260 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SUPPORT-001</span>
+<span class="rtitle">Windows Internals, 7th Edition — Part 2 (selected chapters)</span>
+<span class="hours">260 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 260 active-learning hours
         <span class="muted">(190–350 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block advanced" id="block-SYS1">
-          <div class="block-top">
-            <span class="block-id">SYS1</span>
-            <span class="badge">Advanced expansion</span>
-          </div>
-          <h3>Distributed Systems</h3>
-          <p class="lane">Systems design</p>
-          <div class="dependency"><b>Requires blocks:</b> N0, S2, SEC1, SYS0</div>
-          <div class="block-hours"><b>470 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">ADV-SYS-001</span>
-        <span class="rtitle">Distributed Systems</span>
-        <span class="hours">470 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 470 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/sysinternals/resources/windows-internals" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block advanced" id="block-SYS1">
+<div class="block-top">
+<span class="block-id">SYS1</span>
+<span class="badge">Advanced expansion</span>
+</div>
+<h3>Distributed Systems</h3>
+<p class="lane">Systems design</p>
+<div class="dependency"><b>Requires blocks:</b> N0, S2, SEC1, SYS0</div>
+<div class="block-hours"><b>470 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ADV-SYS-001</span>
+<span class="rtitle">Distributed Systems</span>
+<span class="hours">470 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 470 active-learning hours
         <span class="muted">(350–630 plausible)</span></p>
-        <p><b>Scope:</b> readings; labs; design reports</p>
-        <div><b>Mastery evidence</b><ul><li>Complete selected distributed-systems labs.</li><li>Write a failure and consistency analysis.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block background" id="block-H0">
-          <div class="block-top">
-            <span class="block-id">H0</span>
-            <span class="badge">Background breadth</span>
-          </div>
-          <h3>Technical Writing</h3>
-          <p class="lane">Human context</p>
-          <div class="dependency"><b>Requires blocks:</b> SYS0</div>
-          <div class="block-hours"><b>230 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">BREADTH-001</span>
-        <span class="rtitle">Expository and Technical Writing</span>
-        <span class="hours">230 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 230 active-learning hours
+<p><b>Scope:</b> readings; labs; design reports</p>
+<div><b>Mastery evidence</b><ul><li>Complete selected distributed-systems labs.</li><li>Write a failure and consistency analysis.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://pdos.csail.mit.edu/6.824/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block background" id="block-H0">
+<div class="block-top">
+<span class="block-id">H0</span>
+<span class="badge">Background breadth</span>
+</div>
+<h3>Technical Writing</h3>
+<p class="lane">Human context</p>
+<div class="dependency"><b>Requires blocks:</b> SYS0</div>
+<div class="block-hours"><b>230 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">BREADTH-001</span>
+<span class="rtitle">Expository and Technical Writing</span>
+<span class="hours">230 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 230 active-learning hours
         <span class="muted">(150–340 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>writing portfolio</li><li>before-and-after revisions</li><li>recorded presentation</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block background" id="block-H3">
-          <div class="block-top">
-            <span class="block-id">H3</span>
-            <span class="badge">Background breadth</span>
-          </div>
-          <h3>Economics &amp; Science/Technology/Society</h3>
-          <p class="lane">Human context</p>
-          <div class="dependency"><b>Requires blocks:</b> SEC1</div>
-          <div class="block-hours"><b>420 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">BREADTH-004</span>
-        <span class="rtitle">Microeconomics or Economics of Information</span>
-        <span class="hours">220 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 220 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>writing portfolio</li><li>before-and-after revisions</li><li>recorded presentation</li></ul></div>
+<div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
+</details></div>
+</article>
+<article class="block background" id="block-H3">
+<div class="block-top">
+<span class="block-id">H3</span>
+<span class="badge">Background breadth</span>
+</div>
+<h3>Economics &amp; Science/Technology/Society</h3>
+<p class="lane">Human context</p>
+<div class="dependency"><b>Requires blocks:</b> SEC1</div>
+<div class="block-hours"><b>420 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">BREADTH-004</span>
+<span class="rtitle">Microeconomics or Economics of Information</span>
+<span class="hours">220 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 220 active-learning hours
         <span class="muted">(140–330 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>economic-analysis report</li><li>completed assignments</li></ul></div>
-      </div>
-    </details>
-    <details class="resource">
-      <summary>
-        <span class="rid">BREADTH-007</span>
-        <span class="rtitle">Science, Technology, and Society</span>
-        <span class="hours">200 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 200 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>economic-analysis report</li><li>completed assignments</li></ul></div>
+<div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
+</details>
+<details class="resource">
+<summary>
+<span class="rid">BREADTH-007</span>
+<span class="rtitle">Science, Technology, and Society</span>
+<span class="hours">200 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 200 active-learning hours
         <span class="muted">(130–300 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        <div><b>Mastery evidence</b><ul><li>sociotechnical analysis paper</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-10">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 10</span>
-          <h2>Wave 10</h2>
-        </div>
-        <div class="wave-stat">640 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block specialization" id="block-MX0">
-          <div class="block-top">
-            <span class="block-id">MX0</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>RandomX Internals</h3>
-          <p class="lane">Cryptomining internals</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, C0, S0, P1, S1, T1, W2</div>
-          <div class="block-hours"><b>250 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-008</span>
-        <span class="rtitle">RandomX Specification, Design Documentation, and Reference Implementation</span>
-        <span class="hours">250 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 250 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>sociotechnical analysis paper</li></ul></div>
+<div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-10">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 10</span>
+<h2>Wave 10</h2>
+</div>
+<div class="wave-stat">640 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block specialization" id="block-MX0">
+<div class="block-top">
+<span class="block-id">MX0</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>RandomX Internals</h3>
+<p class="lane">Cryptomining internals</p>
+<div class="dependency"><b>Requires blocks:</b> K0, C0, S0, P1, S1, T1, W2</div>
+<div class="block-hours"><b>250 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-008</span>
+<span class="rtitle">RandomX Specification, Design Documentation, and Reference Implementation</span>
+<span class="hours">250 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 250 active-learning hours
         <span class="muted">(180–340 plausible)</span></p>
-        <p><b>Scope:</b> RandomX design goals; virtual machine; generated programs; JIT translation; cache and dataset</p>
-        <div><b>Mastery evidence</b><ul><li>Trace one computation path from API entry to VM/JIT execution.</li><li>Map source code to generated/compiled machine behavior.</li><li>Profile controlled benchmark runs and explain cache, memory and CPU effects.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block specialization" id="block-W4">
-          <div class="block-top">
-            <span class="block-id">W4</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>PE/COFF, Loader &amp; Software Trust</h3>
-          <p class="lane">Windows binaries</p>
-          <div class="dependency"><b>Requires blocks:</b> S0, S1, CR0, T1, W2</div>
-          <div class="block-hours"><b>240 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-004</span>
-        <span class="rtitle">Microsoft PE/COFF + DLL/Loader + Authenticode Documentation</span>
-        <span class="hours">240 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 240 active-learning hours
+<p><b>Scope:</b> RandomX design goals; virtual machine; generated programs; JIT translation; cache and dataset</p>
+<div><b>Mastery evidence</b><ul><li>Trace one computation path from API entry to VM/JIT execution.</li><li>Map source code to generated/compiled machine behavior.</li><li>Profile controlled benchmark runs and explain cache, memory and CPU effects.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://github.com/tevador/RandomX" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article>
+<article class="block specialization" id="block-W4">
+<div class="block-top">
+<span class="block-id">W4</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>PE/COFF, Loader &amp; Software Trust</h3>
+<p class="lane">Windows binaries</p>
+<div class="dependency"><b>Requires blocks:</b> S0, S1, CR0, T1, W2</div>
+<div class="block-hours"><b>240 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-004</span>
+<span class="rtitle">Microsoft PE/COFF + DLL/Loader + Authenticode Documentation</span>
+<span class="hours">240 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 240 active-learning hours
         <span class="muted">(180–320 plausible)</span></p>
-        <p><b>Scope:</b> DOS and PE headers; COFF; section table; RVA, VA and file-offset relationships; imports and exports</p>
-        <div><b>Mastery evidence</b><ul><li>Parse important PE structures from owned binaries.</li><li>Map file offsets, RVAs and loaded virtual addresses.</li><li>Explain how imports, relocations and DLL loading affect runtime execution.</li><li>Compare signed and intentionally modified owned binaries and document integrity consequences.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block specialization" id="block-W5">
-          <div class="block-top">
-            <span class="block-id">W5</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>Windows Observability — Sysinternals &amp; Sysmon</h3>
-          <p class="lane">Windows telemetry</p>
-          <div class="dependency"><b>Requires blocks:</b> N0, SEC0, W0, W3</div>
-          <div class="block-hours"><b>150 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SUPPORT-002</span>
-        <span class="rtitle">Microsoft Sysinternals Suite + Sysmon</span>
-        <span class="hours">150 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 150 active-learning hours
+<p><b>Scope:</b> DOS and PE headers; COFF; section table; RVA, VA and file-offset relationships; imports and exports</p>
+<div><b>Mastery evidence</b><ul><li>Parse important PE structures from owned binaries.</li><li>Map file offsets, RVAs and loaded virtual addresses.</li><li>Explain how imports, relocations and DLL loading affect runtime execution.</li><li>Compare signed and intentionally modified owned binaries and document integrity consequences.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/windows/win32/debug/pe-format" rel="noopener noreferrer" target="_blank">PE/COFF specification ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-functions" rel="noopener noreferrer" target="_blank">DLL functions ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/windows/win32/dlls/run-time-dynamic-linking" rel="noopener noreferrer" target="_blank">Runtime dynamic linking ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/windows/win32/seccrypto/signtool" rel="noopener noreferrer" target="_blank">SignTool / signing ↗</a></div></div>
+</details></div>
+</article>
+<article class="block specialization" id="block-W5">
+<div class="block-top">
+<span class="block-id">W5</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>Windows Observability — Sysinternals &amp; Sysmon</h3>
+<p class="lane">Windows telemetry</p>
+<div class="dependency"><b>Requires blocks:</b> N0, SEC0, W0, W3</div>
+<div class="block-hours"><b>150 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SUPPORT-002</span>
+<span class="rtitle">Microsoft Sysinternals Suite + Sysmon</span>
+<span class="hours">150 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 150 active-learning hours
         <span class="muted">(110–210 plausible)</span></p>
-        <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-        
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-11">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 11</span>
-          <h2>Wave 11</h2>
-        </div>
-        <div class="wave-stat">510 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block specialization" id="block-MX1">
-          <div class="block-top">
-            <span class="block-id">MX1</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>XMRig Architecture</h3>
-          <p class="lane">Cryptomining internals</p>
-          <div class="dependency"><b>Requires blocks:</b> K0, K1, S0, N0, P1, W2, MX0</div>
-          <div class="block-hours"><b>320 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-009</span>
-        <span class="rtitle">XMRig Source Code + Official Windows/Build/Benchmark Documentation</span>
-        <span class="hours">320 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 320 active-learning hours
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite" rel="noopener noreferrer" target="_blank">Sysinternals Suite ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon" rel="noopener noreferrer" target="_blank">Sysmon ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon" rel="noopener noreferrer" target="_blank">Process Monitor ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer" rel="noopener noreferrer" target="_blank">Process Explorer ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/vmmap" rel="noopener noreferrer" target="_blank">VMMap ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/sigcheck" rel="noopener noreferrer" target="_blank">Sigcheck ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-11">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 11</span>
+<h2>Wave 11</h2>
+</div>
+<div class="wave-stat">510 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block specialization" id="block-MX1">
+<div class="block-top">
+<span class="block-id">MX1</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>XMRig Architecture</h3>
+<p class="lane">Cryptomining internals</p>
+<div class="dependency"><b>Requires blocks:</b> K0, K1, S0, N0, P1, W2, MX0</div>
+<div class="block-hours"><b>320 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-009</span>
+<span class="rtitle">XMRig Source Code + Official Windows/Build/Benchmark Documentation</span>
+<span class="hours">320 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 320 active-learning hours
         <span class="muted">(240–430 plausible)</span></p>
-        <p><b>Scope:</b> startup and configuration; Windows build organization; CPU and hardware topology detection; worker/thread management; RandomX backend integration</p>
-        <div><b>Mastery evidence</b><ul><li>Draw the XMRig architecture from source.</li><li>Build it in an isolated Windows lab.</li><li>Profile offline benchmark mode.</li><li>Map selected source subsystems to disassembly and Windows runtime artifacts.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        
-        <article class="block specialization" id="block-W6">
-          <div class="block-top">
-            <span class="block-id">W6</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>WinDbg Dynamic Analysis</h3>
-          <p class="lane">Reverse engineering</p>
-          <div class="dependency"><b>Requires blocks:</b> S0, S1, T1, W4</div>
-          <div class="block-hours"><b>190 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-005</span>
-        <span class="rtitle">WinDbg — Microsoft User-Mode Debugging Material</span>
-        <span class="hours">190 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 190 active-learning hours
+<p><b>Scope:</b> startup and configuration; Windows build organization; CPU and hardware topology detection; worker/thread management; RandomX backend integration</p>
+<div><b>Mastery evidence</b><ul><li>Draw the XMRig architecture from source.</li><li>Build it in an isolated Windows lab.</li><li>Profile offline benchmark mode.</li><li>Map selected source subsystems to disassembly and Windows runtime artifacts.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://github.com/xmrig/xmrig" rel="noopener noreferrer" target="_blank">XMRig source ↗</a><a class="resource-link secondary" href="https://xmrig.com/docs/miner" rel="noopener noreferrer" target="_blank">XMRig documentation ↗</a><a class="resource-link secondary" href="https://xmrig.com/docs/miner/build/windows" rel="noopener noreferrer" target="_blank">Windows build docs ↗</a><a class="resource-link secondary" href="https://xmrig.com/docs/miner/benchmark" rel="noopener noreferrer" target="_blank">Benchmark docs ↗</a></div></div>
+</details></div>
+</article>
+<article class="block specialization" id="block-W6">
+<div class="block-top">
+<span class="block-id">W6</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>WinDbg Dynamic Analysis</h3>
+<p class="lane">Reverse engineering</p>
+<div class="dependency"><b>Requires blocks:</b> S0, S1, T1, W4</div>
+<div class="block-hours"><b>190 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-005</span>
+<span class="rtitle">WinDbg — Microsoft User-Mode Debugging Material</span>
+<span class="hours">190 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 190 active-learning hours
         <span class="muted">(140–260 plausible)</span></p>
-        <p><b>Scope:</b> launching and attaching; symbols; breakpoints; register and memory inspection; stack traces</p>
-        <div><b>Mastery evidence</b><ul><li>Debug owned source-available programs at source and assembly levels.</li><li>Repeat analysis with stripped binaries.</li><li>Recover control flow, parameters, modules and thread behavior dynamically.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-12">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 12</span>
-          <h2>Wave 12</h2>
-        </div>
-        <div class="wave-stat">360 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block specialization" id="block-W7">
-          <div class="block-top">
-            <span class="block-id">W7</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>Ghidra Static Reverse Engineering</h3>
-          <p class="lane">Reverse engineering</p>
-          <div class="dependency"><b>Requires blocks:</b> C1, S0, S1, T1, W6</div>
-          <div class="block-hours"><b>360 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-006</span>
-        <span class="rtitle">Ghidra + The Ghidra Book, 2nd Edition</span>
-        <span class="hours">360 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 360 active-learning hours
+<p><b>Scope:</b> launching and attaching; symbols; breakpoints; register and memory inspection; stack traces</p>
+<div><b>Mastery evidence</b><ul><li>Debug owned source-available programs at source and assembly levels.</li><li>Repeat analysis with stripped binaries.</li><li>Recover control flow, parameters, modules and thread behavior dynamically.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg" rel="noopener noreferrer" target="_blank">WinDbg getting started ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/" rel="noopener noreferrer" target="_blank">WinDbg documentation ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-12">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 12</span>
+<h2>Wave 12</h2>
+</div>
+<div class="wave-stat">360 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block specialization" id="block-W7">
+<div class="block-top">
+<span class="block-id">W7</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>Ghidra Static Reverse Engineering</h3>
+<p class="lane">Reverse engineering</p>
+<div class="dependency"><b>Requires blocks:</b> C1, S0, S1, T1, W6</div>
+<div class="block-hours"><b>360 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-006</span>
+<span class="rtitle">Ghidra + The Ghidra Book, 2nd Edition</span>
+<span class="hours">360 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 360 active-learning hours
         <span class="muted">(270–480 plausible)</span></p>
-        <p><b>Scope:</b> disassembly; decompilation; functions and calling conventions; control-flow graphs; data structures</p>
-        <div><b>Mastery evidence</b><ul><li>Recover the architecture of stripped owned binaries.</li><li>Compare two builds and explain binary-level differences.</li><li>Perform harmless behavioral patches on toy/owned binaries and validate them dynamically.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-13">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 13</span>
-          <h2>Wave 13</h2>
-        </div>
-        <div class="wave-stat">300 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block specialization" id="block-W8">
-          <div class="block-top">
-            <span class="block-id">W8</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>Windows Malware Analysis with FLARE</h3>
-          <p class="lane">Malware analysis</p>
-          <div class="dependency"><b>Requires blocks:</b> SEC0, SEC2, W3, W5, W7</div>
-          <div class="block-hours"><b>300 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-007</span>
-        <span class="rtitle">Mandiant FLARE Learning Hub + FLARE-VM</span>
-        <span class="hours">300 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 300 active-learning hours
+<p><b>Scope:</b> disassembly; decompilation; functions and calling conventions; control-flow graphs; data structures</p>
+<div><b>Mastery evidence</b><ul><li>Recover the architecture of stripped owned binaries.</li><li>Compare two builds and explain binary-level differences.</li><li>Perform harmless behavioral patches on toy/owned binaries and validate them dynamically.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://github.com/NationalSecurityAgency/ghidra" rel="noopener noreferrer" target="_blank">Ghidra ↗</a><a class="resource-link secondary" href="https://nostarch.com/ghidra-book-2e" rel="noopener noreferrer" target="_blank">The Ghidra Book, 2e ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-13">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 13</span>
+<h2>Wave 13</h2>
+</div>
+<div class="wave-stat">300 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block specialization" id="block-W8">
+<div class="block-top">
+<span class="block-id">W8</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>Windows Malware Analysis with FLARE</h3>
+<p class="lane">Malware analysis</p>
+<div class="dependency"><b>Requires blocks:</b> SEC0, SEC2, W3, W5, W7</div>
+<div class="block-hours"><b>300 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-007</span>
+<span class="rtitle">Mandiant FLARE Learning Hub + FLARE-VM</span>
+<span class="hours">300 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 300 active-learning hours
         <span class="muted">(220–400 plausible)</span></p>
-        <p><b>Scope:</b> Malware Analysis Crash Course; Windows-specific malware behavior; static and dynamic triage; configuration and behavior reconstruction; Time Travel Debugging</p>
-        <div><b>Mastery evidence</b><ul><li>Analyze authorized Windows malware-training samples and produce reproducible reports.</li><li>Correlate Ghidra, WinDbg and behavioral observations.</li><li>Separate direct observations from inference.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-    <section class="wave" id="wave-14">
-      <div class="wave-head">
-        <div>
-          <span class="eyebrow">Earliest dependency wave 14</span>
-          <h2>Wave 14</h2>
-        </div>
-        <div class="wave-stat">190 h across all blocks</div>
-      </div>
-      <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
-      <div class="grid">
-        <article class="block specialization" id="block-SYN">
-          <div class="block-top">
-            <span class="block-id">SYN</span>
-            <span class="badge">Windows specialization</span>
-          </div>
-          <h3>Windows Cryptojacking Campaign Synthesis</h3>
-          <p class="lane">Synthesis</p>
-          <div class="dependency"><b>Requires blocks:</b> N0, SEC0, SEC2, W3, W5, MX1, W8</div>
-          <div class="block-hours"><b>190 h</b> total effort in this block</div>
-          <div class="resources">
-    <details class="resource">
-      <summary>
-        <span class="rid">WIN-SPEC-010</span>
-        <span class="rtitle">Real Windows Cryptojacking Campaign Reconstruction — Microsoft Case Studies + MITRE ATT&amp;CK Compute Hijacking</span>
-        <span class="hours">190 h</span>
-      </summary>
-      <div class="resource-body">
-        <p><b>Estimated effort:</b> 190 active-learning hours
+<p><b>Scope:</b> Malware Analysis Crash Course; Windows-specific malware behavior; static and dynamic triage; configuration and behavior reconstruction; Time Travel Debugging</p>
+<div><b>Mastery evidence</b><ul><li>Analyze authorized Windows malware-training samples and produce reproducible reports.</li><li>Correlate Ghidra, WinDbg and behavioral observations.</li><li>Separate direct observations from inference.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://github.com/mandiant/flare-learning-hub" rel="noopener noreferrer" target="_blank">FLARE Learning Hub ↗</a><a class="resource-link secondary" href="https://github.com/mandiant/flare-vm" rel="noopener noreferrer" target="_blank">FLARE-VM ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<section class="wave" id="wave-14">
+<div class="wave-head">
+<div>
+<span class="eyebrow">Earliest dependency wave 14</span>
+<h2>Wave 14</h2>
+</div>
+<div class="wave-stat">190 h across all blocks</div>
+</div>
+<p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
+<div class="grid">
+<article class="block specialization" id="block-SYN">
+<div class="block-top">
+<span class="block-id">SYN</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>Windows Cryptojacking Campaign Synthesis</h3>
+<p class="lane">Synthesis</p>
+<div class="dependency"><b>Requires blocks:</b> N0, SEC0, SEC2, W3, W5, MX1, W8</div>
+<div class="block-hours"><b>190 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">WIN-SPEC-010</span>
+<span class="rtitle">Real Windows Cryptojacking Campaign Reconstruction — Microsoft Case Studies + MITRE ATT&amp;CK Compute Hijacking</span>
+<span class="hours">190 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 190 active-learning hours
         <span class="muted">(140–270 plausible)</span></p>
-        <p><b>Scope:</b> clean-versus-suspect software comparison; carrier/distribution reconstruction; PE and DLL relationships; execution and process tree reconstruction; miner orchestration</p>
-        <div><b>Mastery evidence</b><ul><li>Reconstruct a campaign from public technical evidence.</li><li>Produce a timeline and component graph.</li><li>Separate direct evidence from inference and vendor assertions.</li><li>Explain alternative benign interpretations where applicable.</li></ul></div>
-      </div>
-    </details></div>
-        </article>
-        </div>
-    </section>
-    
-
-  <div class="footer-note">
+<p><b>Scope:</b> clean-versus-suspect software comparison; carrier/distribution reconstruction; PE and DLL relationships; execution and process tree reconstruction; miner orchestration</p>
+<div><b>Mastery evidence</b><ul><li>Reconstruct a campaign from public technical evidence.</li><li>Produce a timeline and component graph.</li><li>Separate direct evidence from inference and vendor assertions.</li><li>Explain alternative benign interpretations where applicable.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://www.microsoft.com/en-us/security/blog/2026/05/26/poisoned-search-results-gpu-mining-cryptojacking-campaign-abusing-screenconnect-microsoft-net-utilities/" rel="noopener noreferrer" target="_blank">Microsoft case study ↗</a><a class="resource-link secondary" href="https://attack.mitre.org/techniques/T1496/001/" rel="noopener noreferrer" target="_blank">MITRE ATT&amp;CK T1496.001 ↗</a></div></div>
+</details></div>
+</article>
+</div>
+</section>
+<div class="footer-note">
     Learning hours represent focused active work: instruction/reading, exercises, laboratories/projects, assessment/reporting/oral explanation, and spaced memory consolidation/revalidation. They are effort estimates, not calendar promises. Practical malicious-software work remains limited to owned, toy, CTF, isolated, simulated, or explicitly authorized environments.
   </div>
 </main>
