@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Parallel Foundation + Windows Specialization Roadmap — Linked Edition</title>
+<title>Parallel Foundation + Windows Specialization Roadmap — Dependency Weighted</title>
 <style>
 :root {
   --bg:#081018; --panel:#0f1b27; --panel2:#132334; --text:#ecf4fb; --muted:#9bb0c3;
@@ -68,19 +68,44 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 .resource-link:hover{background:rgba(123,220,255,.14);border-color:#4f8ca9}
 .resource-link.secondary{color:#b7e9d5;border-color:#355f54;background:rgba(167,243,208,.05)}
 .no-link-note{margin-top:9px;padding:7px 9px;border-left:2px solid #6c7780;color:#9bb0c3;background:rgba(155,176,195,.04);font-size:.78rem}
+
+.importance-overview{margin:32px 0 42px}
+.importance-explainer{color:#bfd0df;max-width:980px;margin:.35rem 0 1rem}
+.importance-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.importance-card{padding:14px 15px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+.importance-card .rank{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.importance-card strong{display:block;margin:.2rem 0 .35rem;line-height:1.25}
+.importance-card .iw{font-size:1.25rem;font-weight:900;color:var(--accent)}
+.importance-card .isub{display:block;color:var(--muted);font-size:.8rem;margin-top:3px}
+.importance-row{display:flex;flex-wrap:wrap;gap:6px;margin:.55rem 0 .7rem}
+.importance-pill{display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;border:1px solid #36516a;background:rgba(123,220,255,.06);font-size:.74rem;color:#c8d9e5}
+.importance-pill.weight{font-weight:900;color:#9ce8ff;border-color:#3d7892}
+.importance-pill.target{color:#b8f4d9;border-color:#406f61;background:rgba(167,243,208,.05)}
+.importance-meter{height:6px;border-radius:999px;background:#1a2a38;overflow:hidden;margin-top:7px}
+.importance-meter > span{display:block;height:100%;background:linear-gradient(90deg,#547d95,#8adffb);border-radius:999px}
+.block[data-importance-tier="critical_backbone"]{box-shadow:0 0 0 1px rgba(123,220,255,.16),0 18px 42px rgba(0,0,0,.2)}
+.block[data-importance-tier="very_high"]{box-shadow:0 0 0 1px rgba(123,220,255,.10),0 14px 36px rgba(0,0,0,.18)}
+.importance-legend{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;color:var(--muted);font-size:.78rem}
+.importance-legend span{padding:4px 7px;border:1px solid var(--line);border-radius:999px}
+
+.aggressive-minimum-badge{display:inline-flex;align-items:center;gap:5px;margin-left:7px;padding:3px 7px;border-radius:999px;border:1px solid #f3bf5b;background:rgba(255,213,138,.10);color:#ffd98f;font-size:.69rem;font-weight:900;letter-spacing:.02em;vertical-align:middle}
+.aggressive-minimum-block-note{display:inline-flex;align-items:center;padding:5px 8px;margin-top:7px;border-radius:999px;border:1px solid #f3bf5b;background:rgba(255,213,138,.08);color:#ffd98f;font-size:.73rem;font-weight:900}
+.block.aggressive-minimum{outline:1px solid rgba(243,191,91,.34);outline-offset:2px}
+.resource.aggressive-minimum-resource{border-top-color:rgba(243,191,91,.38)}
+.legend .aggressive-minimum-legend{border-color:#f3bf5b;color:#ffd98f;background:rgba(255,213,138,.07)}
 </style>
 </head>
 <body>
 <header class="hero">
 <div class="wrap">
-<div class="kicker">Dependency-audited parallel curriculum · v3.1 · linked edition</div>
+<div class="kicker">Dependency-audited parallel curriculum · v3.3 · dependency-weighted edition</div>
 <h1>Foundation → Windows → Reverse Engineering → Cryptojacking Analysis</h1>
 <p class="lead">Mathematics and programming start together. Independent branches progress in parallel. A knowledge block opens only after the blocks that actually supply its prerequisites are mastered—so unrelated mathematics, EE, breadth, or Windows work never becomes an artificial global gate.</p>
 <div class="stats">
 <div class="stat"><b>59</b><span>resources / categories preserved</span></div>
 <div class="stat"><b>51</b><span>dependency-gated knowledge blocks</span></div>
 <div class="stat"><b>14</b><span>earliest dependency waves</span></div>
-<div class="stat"><b>17,745 h</b><span>total active-learning effort</span></div>
+<div class="stat"><b>17,835 h</b><span>total active-learning effort</span></div>
 <div class="stat"><b>Wave 7</b><span>Windows Internals first becomes available</span></div>
 <div class="stat"><b>Wave 14</b><span>cryptojacking synthesis becomes available</span></div>
 </div>
@@ -93,8 +118,8 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <p>A practical workload is usually <b>2–3 simultaneous deep lanes</b>: for example programming/systems + mathematics/engineering + one lighter support or breadth lane.</p>
 <div class="legend">
 <span>Core foundation</span><span>Windows specialization</span><span>Engineering</span><span>Advanced</span><span>Branch-specific</span><span>Background breadth</span>
-</div>
-<p><b>Resource links:</b> expand any resource card and use the linked button(s). Multi-source resources show their relevant official/reference components separately. Categories without a finalized resource are clearly marked rather than assigned an invented URL.</p></div>
+<span class="aggressive-minimum-legend">★ Aggressive minimum</span></div>
+<p><b>Resource links:</b> expand any resource card and use the linked button(s). Multi-source resources show their relevant official/reference components separately. Categories without a finalized resource are clearly marked rather than assigned an invented URL.</p><p><b>Dependency weight:</b> each block now shows how many later blocks depend on it, how many learning hours sit downstream, and a normalized structural-leverage score. A low score does not mean unimportant: late specialization blocks naturally have fewer descendants.</p></div><section class="importance-overview"><h2>Dependency importance — structural leverage</h2><p class="importance-explainer">The weight answers a graph question: how much later curriculum rests on this block? It combines downstream block reach, downstream active-learning hours, and explicit dependent edges. Goal relevance is shown separately by the “SYN path” marker.</p><div class="importance-grid"><div class="importance-card"><div class="rank">#1 · M0</div><strong>Mathematics Launch</strong><span class="iw">Weight 100.0</span><span class="isub">46 downstream blocks · 15,790 h downstream</span><div class="importance-meter"><span style="width:100.0%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div><div class="importance-card"><div class="rank">#2 · K0</div><strong>Programming &amp; Tooling Launch</strong><span class="iw">Weight 99.0</span><span class="isub">43 downstream blocks · 15,065 h downstream</span><div class="importance-meter"><span style="width:99.0%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div><div class="importance-card"><div class="rank">#3 · M1</div><strong>Discrete Mathematics for Computing</strong><span class="iw">Weight 89.4</span><span class="isub">41 downstream blocks · 14,335 h downstream</span><div class="importance-meter"><span style="width:89.4%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div><div class="importance-card"><div class="rank">#4 · S0</div><strong>Machine-Level Systems</strong><span class="iw">Weight 77.0</span><span class="isub">30 downstream blocks · 10,530 h downstream</span><div class="importance-meter"><span style="width:77.0%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div><div class="importance-card"><div class="rank">#5 · K1</div><strong>Software Discipline &amp; Low-Level Programming</strong><span class="iw">Weight 76.7</span><span class="isub">34 downstream blocks · 12,080 h downstream</span><div class="importance-meter"><span style="width:76.7%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div><div class="importance-card"><div class="rank">#6 · C0</div><strong>Digital Design &amp; Computer Architecture</strong><span class="iw">Weight 75.0</span><span class="isub">32 downstream blocks · 11,440 h downstream</span><div class="importance-meter"><span style="width:75.0%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div><div class="importance-card"><div class="rank">#7 · M2</div><strong>Linear &amp; Multivariable Mathematics</strong><span class="iw">Weight 72.7</span><span class="isub">34 downstream blocks · 11,195 h downstream</span><div class="importance-meter"><span style="width:72.7%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div><div class="importance-card"><div class="rank">#8 · M3</div><strong>Differential Equations &amp; Probability</strong><span class="iw">Weight 68.5</span><span class="isub">32 downstream blocks · 10,420 h downstream</span><div class="importance-meter"><span style="width:68.5%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div><div class="importance-card"><div class="rank">#9 · C1</div><strong>Algorithms &amp; Data Structures</strong><span class="iw">Weight 60.0</span><span class="isub">27 downstream blocks · 8,920 h downstream</span><div class="importance-meter"><span style="width:60.0%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div><div class="importance-card"><div class="rank">#10 · S1</div><strong>Operating Systems Concepts + x86-64 Fluency</strong><span class="iw">Weight 50.9</span><span class="isub">21 downstream blocks · 6,700 h downstream</span><div class="importance-meter"><span style="width:50.9%"></span></div><span class="isub">✓ On final Windows cryptojacking synthesis path</span></div></div><div class="importance-legend"><span>Critical backbone ≥80</span><span>Very high ≥60</span><span>High ≥40</span><span>Moderate ≥20</span><span>Local &lt;20</span><span>Terminal = 0</span></div></section>
 <h2>Major specialization unlocks</h2>
 <div class="milestones">
 <div class="milestone">
@@ -156,57 +181,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block core" id="block-K0">
-<div class="block-top">
-<span class="block-id">K0</span>
-<span class="badge">Core foundation</span>
-</div>
-<h3>Programming &amp; Tooling Launch</h3>
-<p class="lane">Programming / tooling</p>
-<div class="dependency"><b>Requires blocks:</b> None — entry block</div>
-<div class="block-hours"><b>695 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">FND-001</span>
-<span class="rtitle">The Missing Semester of Your CS Education (2026)</span>
-<span class="hours">65 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 65 active-learning hours
-        <span class="muted">(50–80 plausible)</span></p>
-<p><b>Scope:</b> Complete the exercises; treat this as a compact bootcamp rather than a semester-length course.</p>
-<div><b>Mastery evidence</b><ul><li>Maintain a Git repository, shell environment, debugger workflow, automation scripts, and reproducible notes.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://missing.csail.mit.edu/2026/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details>
-<details class="resource">
-<summary>
-<span class="rid">FND-002</span>
-<span class="rtitle">Programming: Principles and Practice Using C++, Third Edition</span>
-<span class="hours">630 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 630 active-learning hours
-        <span class="muted">(490–810 plausible)</span></p>
-<p><b>Scope:</b> Complete substantial exercises and at least one multi-file project. Python and data-science programming are not treated as prerequisites.</p>
-<div><b>Mastery evidence</b><ul><li>Complete several multi-file C++ programs.</li><li>Use RAII, containers, classes, generic code, tests, debugging, and refactoring.</li><li>Explain design and ownership choices.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://www.stroustrup.com/programming.html" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details></div>
-</article>
-<article class="block core" id="block-M0">
+<article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="100.0" data-importance-tier="critical_backbone" id="block-M0">
 <div class="block-top">
 <span class="block-id">M0</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Mathematics Launch</h3>
-<p class="lane">Mathematics</p>
+<p class="lane">Mathematics</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 100.0 · Critical backbone</span><span class="importance-pill">46 downstream blocks</span><span class="importance-pill">7 explicit dependents</span><span class="importance-pill">15,790 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:100.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> None — entry block</div>
 <div class="block-hours"><b>230 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">ENG-MATH-001</span>
-<span class="rtitle">Single Variable Calculus</span>
+<span class="rtitle">Single Variable Calculus<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">230 h</span>
 </summary>
 <div class="resource-body">
@@ -216,14 +204,49 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete problem sets and at least two timed exams.</li><li>Use derivatives, integrals, series, and optimization in engineering problems.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block background" id="block-H4">
+</article><article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="99.0" data-importance-tier="critical_backbone" id="block-K0">
+<div class="block-top">
+<span class="block-id">K0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Programming &amp; Tooling Launch</h3>
+<p class="lane">Programming / tooling</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 99.0 · Critical backbone</span><span class="importance-pill">43 downstream blocks</span><span class="importance-pill">11 explicit dependents</span><span class="importance-pill">15,065 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:99.0%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> None — entry block</div>
+<div class="block-hours"><b>695 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">FND-001</span>
+<span class="rtitle">The Missing Semester of Your CS Education (2026)<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">65 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 65 active-learning hours
+        <span class="muted">(50–80 plausible)</span></p>
+<p><b>Scope:</b> Complete the exercises; treat this as a compact bootcamp rather than a semester-length course.</p>
+<div><b>Mastery evidence</b><ul><li>Maintain a Git repository, shell environment, debugger workflow, automation scripts, and reproducible notes.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://missing.csail.mit.edu/2026/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details>
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">FND-002</span>
+<span class="rtitle">Programming: Principles and Practice Using C++, Third Edition<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">630 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 630 active-learning hours
+        <span class="muted">(490–810 plausible)</span></p>
+<p><b>Scope:</b> Complete substantial exercises and at least one multi-file project. Python and data-science programming are not treated as prerequisites.</p>
+<div><b>Mastery evidence</b><ul><li>Complete several multi-file C++ programs.</li><li>Use RAII, containers, classes, generic code, tests, debugging, and refactoring.</li><li>Explain design and ownership choices.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://www.stroustrup.com/programming.html" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article><article class="block background" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-H4">
 <div class="block-top">
 <span class="block-id">H4</span>
 <span class="badge">Background breadth</span>
 </div>
 <h3>History of Technology &amp; Arts Practice</h3>
-<p class="lane">Human context</p>
+<p class="lane">Human context</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> None — entry block</div>
 <div class="block-hours"><b>430 h</b> total effort in this block</div>
 <div class="resources">
@@ -253,14 +276,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>creative portfolio</li><li>reflection essay</li></ul></div>
 <div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
 </details></div>
-</article>
-<article class="block background" id="block-SCI1">
+</article><article class="block background" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-SCI1">
 <div class="block-top">
 <span class="block-id">SCI1</span>
 <span class="badge">Background breadth</span>
 </div>
 <h3>Biology</h3>
-<p class="lane">Science breadth</p>
+<p class="lane">Science breadth</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> None — entry block</div>
 <div class="block-hours"><b>220 h</b> total effort in this block</div>
 <div class="resources">
@@ -277,8 +299,7 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete selected molecular biology, genetics, cell biology, and evolution work.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/7-012-introduction-to-biology-fall-2004/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-</div>
+</article></div>
 </section>
 <section class="wave" id="wave-2">
 <div class="wave-head">
@@ -290,57 +311,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block core" id="block-K1">
-<div class="block-top">
-<span class="block-id">K1</span>
-<span class="badge">Core foundation</span>
-</div>
-<h3>Software Discipline &amp; Low-Level Programming</h3>
-<p class="lane">Programming / systems</p>
-<div class="dependency"><b>Requires blocks:</b> K0</div>
-<div class="block-hours"><b>470 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">FND-003</span>
-<span class="rtitle">Software Construction (MIT 6.005)</span>
-<span class="hours">280 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 280 active-learning hours
-        <span class="muted">(220–360 plausible)</span></p>
-<p><b>Scope:</b> Use readings, problem sets, quizzes, and the final project. Translate Java-specific lessons into language-independent principles.</p>
-<div><b>Mastery evidence</b><ul><li>Build a tested medium-sized application.</li><li>Write specifications and invariants.</li><li>Complete a concurrency analysis and design review.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details>
-<details class="resource">
-<summary>
-<span class="rid">FND-004</span>
-<span class="rtitle">Dive into Systems, Version 1.2 — selected C and debugging track</span>
-<span class="hours">190 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 190 active-learning hours
-        <span class="muted">(150–240 plausible)</span></p>
-<p><b>Scope:</b> Prioritize the C, memory, compiling, debugging, and concurrency chapters. Skip or skim architecture/OS chapters later owned by DDCA, CS:APP, and OSTEP.</p>
-<div><b>Mastery evidence</b><ul><li>Write C utilities.</li><li>Use sanitizers, debugger, and memory tools.</li><li>Explain pointers, layouts, stack/heap behavior, and undefined behavior.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://diveintosystems.org/book/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details></div>
-</article>
-<article class="block core" id="block-M1">
+<article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="89.4" data-importance-tier="critical_backbone" id="block-M1">
 <div class="block-top">
 <span class="block-id">M1</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Discrete Mathematics for Computing</h3>
-<p class="lane">Mathematics / CS</p>
+<p class="lane">Mathematics / CS</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 89.4 · Critical backbone</span><span class="importance-pill">41 downstream blocks</span><span class="importance-pill">6 explicit dependents</span><span class="importance-pill">14,335 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:89.4%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> K0, M0</div>
 <div class="block-hours"><b>260 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">FND-005</span>
-<span class="rtitle">Mathematics for Computer Science (MIT 6.1200J, 2024 materials)</span>
+<span class="rtitle">Mathematics for Computer Science (MIT 6.1200J, 2024 materials)<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">260 h</span>
 </summary>
 <div class="resource-body">
@@ -350,14 +334,49 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Maintain a proof portfolio.</li><li>Solve graph, counting, recurrence, and discrete-probability problems.</li><li>Pass a timed cumulative assessment.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block core" id="block-M2">
+</article><article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="76.7" data-importance-tier="very_high" id="block-K1">
+<div class="block-top">
+<span class="block-id">K1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Software Discipline &amp; Low-Level Programming</h3>
+<p class="lane">Programming / systems</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 76.7 · Very high</span><span class="importance-pill">34 downstream blocks</span><span class="importance-pill">7 explicit dependents</span><span class="importance-pill">12,080 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:76.7%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> K0</div>
+<div class="block-hours"><b>470 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">FND-003</span>
+<span class="rtitle">Software Construction (MIT 6.005)<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">280 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 280 active-learning hours
+        <span class="muted">(220–360 plausible)</span></p>
+<p><b>Scope:</b> Use readings, problem sets, quizzes, and the final project. Translate Java-specific lessons into language-independent principles.</p>
+<div><b>Mastery evidence</b><ul><li>Build a tested medium-sized application.</li><li>Write specifications and invariants.</li><li>Complete a concurrency analysis and design review.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details>
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">FND-004</span>
+<span class="rtitle">Dive into Systems, Version 1.2 — selected C and debugging track<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">190 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 190 active-learning hours
+        <span class="muted">(150–240 plausible)</span></p>
+<p><b>Scope:</b> Prioritize the C, memory, compiling, debugging, and concurrency chapters. Skip or skim architecture/OS chapters later owned by DDCA, CS:APP, and OSTEP.</p>
+<div><b>Mastery evidence</b><ul><li>Write C utilities.</li><li>Use sanitizers, debugger, and memory tools.</li><li>Explain pointers, layouts, stack/heap behavior, and undefined behavior.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://diveintosystems.org/book/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article><article class="block core" data-dependency-weight="72.7" data-importance-tier="very_high" id="block-M2">
 <div class="block-top">
 <span class="block-id">M2</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Linear &amp; Multivariable Mathematics</h3>
-<p class="lane">Mathematics</p>
+<p class="lane">Mathematics</p><div class="importance-row"><span class="importance-pill weight">Weight 72.7 · Very high</span><span class="importance-pill">34 downstream blocks</span><span class="importance-pill">5 explicit dependents</span><span class="importance-pill">11,195 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:72.7%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M0</div>
 <div class="block-hours"><b>445 h</b> total effort in this block</div>
 <div class="resources">
@@ -387,14 +406,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Solve partial-derivative, multiple-integral, vector-field, and coordinate-transformation problems.</li><li>Pass a cumulative exam.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block engineering" id="block-PH0">
+</article><article class="block engineering" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-PH0">
 <div class="block-top">
 <span class="block-id">PH0</span>
 <span class="badge">Engineering branch</span>
 </div>
 <h3>Physics I — Mechanics</h3>
-<p class="lane">Physics / engineering</p>
+<p class="lane">Physics / engineering</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M0</div>
 <div class="block-hours"><b>240 h</b> total effort in this block</div>
 <div class="resources">
@@ -411,14 +429,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete selected mechanics problem sets and a timed exam.</li><li>Demonstrate dimensional analysis, estimation, force, energy, momentum, and rotation reasoning.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block background" id="block-SCI0">
+</article><article class="block background" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-SCI0">
 <div class="block-top">
 <span class="block-id">SCI0</span>
 <span class="badge">Background breadth</span>
 </div>
 <h3>Chemical Science</h3>
-<p class="lane">Science breadth</p>
+<p class="lane">Science breadth</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M0</div>
 <div class="block-hours"><b>240 h</b> total effort in this block</div>
 <div class="resources">
@@ -435,8 +452,7 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete selected atomic structure, bonding, thermodynamics, equilibrium, and kinetics work.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-</div>
+</article></div>
 </section>
 <section class="wave" id="wave-3">
 <div class="wave-head">
@@ -444,24 +460,24 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <span class="eyebrow">Earliest dependency wave 3</span>
 <h2>Wave 3</h2>
 </div>
-<div class="wave-stat">1,385 h across all blocks</div>
+<div class="wave-stat">1,475 h across all blocks</div>
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block core" id="block-C0">
+<article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="75.0" data-importance-tier="very_high" id="block-C0">
 <div class="block-top">
 <span class="block-id">C0</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Digital Design &amp; Computer Architecture</h3>
-<p class="lane">Architecture</p>
+<p class="lane">Architecture</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 75.0 · Very high</span><span class="importance-pill">32 downstream blocks</span><span class="importance-pill">9 explicit dependents</span><span class="importance-pill">11,440 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:75.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> K0, M1</div>
 <div class="block-hours"><b>420 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">FND-008</span>
-<span class="rtitle">Digital Design and Computer Architecture: RISC-V Edition</span>
+<span class="rtitle">Digital Design and Computer Architecture: RISC-V Edition<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">420 h</span>
 </summary>
 <div class="resource-body">
@@ -471,14 +487,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Design combinational and sequential circuits.</li><li>Implement or simulate a small processor.</li><li>Write RISC-V assembly.</li><li>Explain pipelines, hazards, caches, and address translation.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://pages.hmc.edu/harris/ddca/ddcarv.html" rel="noopener noreferrer" target="_blank">Open resource ↗</a><a class="resource-link secondary" href="https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/" rel="noopener noreferrer" target="_blank">MIT Computation Structures (6.004) selected labs ↗</a></div></div>
 </details></div>
-</article>
-<article class="block core" id="block-M3">
+</article><article class="block core aggressive-minimum" data-aggressive-minimum="partial" data-dependency-weight="68.5" data-importance-tier="very_high" id="block-M3">
 <div class="block-top">
 <span class="block-id">M3</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Differential Equations &amp; Probability</h3>
-<p class="lane">Mathematics</p>
+<p class="lane">Mathematics</p><span class="aggressive-minimum-block-note">★ Aggressive minimum · 1/2 resources</span><div class="importance-row"><span class="importance-pill weight">Weight 68.5 · Very high</span><span class="importance-pill">32 downstream blocks</span><span class="importance-pill">5 explicit dependents</span><span class="importance-pill">10,420 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:68.5%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M0, M1, M2</div>
 <div class="block-hours"><b>505 h</b> total effort in this block</div>
 <div class="resources">
@@ -495,10 +510,10 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete problem sets and exams.</li><li>Model and solve at least one circuit or dynamical system.</li><li>Explain stability and transform-domain solutions.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details>
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">ENG-MATH-005</span>
-<span class="rtitle">Probabilistic Systems Analysis and Applied Probability</span>
+<span class="rtitle">Probabilistic Systems Analysis and Applied Probability<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">270 h</span>
 </summary>
 <div class="resource-body">
@@ -508,14 +523,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Solve conditional probability, random-variable, expectation, Bayesian, and stochastic-process problems.</li><li>Complete a statistical-analysis report.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block engineering" id="block-PH1">
+</article><article class="block engineering" data-dependency-weight="10.1" data-importance-tier="local" id="block-PH1">
 <div class="block-top">
 <span class="block-id">PH1</span>
 <span class="badge">Engineering branch</span>
 </div>
 <h3>Physics II — Electricity &amp; Magnetism</h3>
-<p class="lane">Physics / engineering</p>
+<p class="lane">Physics / engineering</p><div class="importance-row"><span class="importance-pill weight">Weight 10.1 · Local</span><span class="importance-pill">4 downstream blocks</span><span class="importance-pill">2 explicit dependents</span><span class="importance-pill">1,310 h downstream</span></div><div class="importance-meter"><span style="width:10.1%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M0, M2</div>
 <div class="block-hours"><b>270 h</b> total effort in this block</div>
 <div class="resources">
@@ -532,32 +546,25 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete field, potential, circuit, induction, and Maxwell-equation problem sets.</li><li>Pass a cumulative assessment.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2019/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block background" id="block-H1">
+</article><article class="block background" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-H1">
 <div class="block-top">
 <span class="block-id">H1</span>
 <span class="badge">Background breadth</span>
 </div>
 <h3>Philosophy &amp; Formal Argument</h3>
-<p class="lane">Human context</p>
+<p class="lane">Human context</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M1</div>
-<div class="block-hours"><b>190 h</b> total effort in this block</div>
+<div class="block-hours"><b>280 h</b> total effort in this block</div>
 <div class="resources">
 <details class="resource">
 <summary>
 <span class="rid">BREADTH-002</span>
-<span class="rtitle">Philosophy and Formal Argument</span>
-<span class="hours">190 h</span>
+<span class="rtitle">Philosophy &amp; Formal Argument — MIT 24.00 + MIT 24.241 + forall x: Calgary</span>
+<span class="hours">280 h</span>
 </summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 190 active-learning hours
-        <span class="muted">(120–280 plausible)</span></p>
-<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-<div><b>Mastery evidence</b><ul><li>essay portfolio</li><li>argument-analysis exercises</li></ul></div>
-<div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
+<div class="resource-body"><p><b>Estimated effort:</b> 280 active-learning hours <span class="muted">(210–360 plausible)</span></p><p><b>Resource set:</b> MIT 24.00 Problems of Philosophy + MIT 24.241 Logic I + forall x: Calgary.</p><p><b>Scope:</b> Concrete three-part set: MIT 24.00 Problems of Philosophy as the primary philosophy course; MIT 24.241 Logic I as the formal-argument course; forall x: Calgary as the free formal-logic textbook. Keep this alongside Mathematics for Computer Science: overlap in proof/logic is intentional reinforcement, while this block emphasizes philosophical argument, inference, semantics, formalization, objections, replies, and sustained argumentative writing.</p><div><b>Components</b><ul><li>MIT 24.00 — Problems of Philosophy — primary philosophy course</li><li>MIT 24.241 — Logic I — formal logic course</li><li>forall x: Calgary — free logic textbook and exercise reference</li></ul></div><div><b>Mastery evidence</b><ul><li>Complete MIT 24.00 readings and handouts.</li><li>Write four substantial philosophy papers totaling at least 5,000 words.</li><li>Completely rewrite at least one philosophy paper after structured critique.</li><li>For major arguments, reconstruct premises and conclusion, identify assumptions, defend a position, formulate a strong objection, and answer it.</li><li>Complete MIT 24.241 Logic I problem sets and available exams.</li><li>Translate natural-language arguments into propositional and first-order logic.</li><li>Construct formal proofs and explain validity, soundness, semantics, soundness, and completeness.</li><li>Use forall x: Calgary as the free textbook and exercise/solution reference when needed.</li></ul></div><p><b>Overlap with Mathematics for Computer Science:</b> Intentional reinforcement. 6.1200J develops CS-oriented proof and discrete mathematics; this block develops philosophical argumentation, inference, semantics, formalization, and sustained argumentative writing.</p><div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/" rel="noopener noreferrer" target="_blank">MIT 24.00 — Problems of Philosophy ↗</a><a class="resource-link secondary" href="https://ocw.mit.edu/courses/24-241-logic-i-fall-2009/" rel="noopener noreferrer" target="_blank">MIT 24.241 — Logic I ↗</a><a class="resource-link secondary" href="https://forallx.openlogicproject.org/" rel="noopener noreferrer" target="_blank">forall x: Calgary ↗</a></div></div>
 </details></div>
-</article>
-</div>
+</article></div>
 </section>
 <section class="wave" id="wave-4">
 <div class="wave-head">
@@ -569,44 +576,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block core" id="block-C1">
-<div class="block-top">
-<span class="block-id">C1</span>
-<span class="badge">Core foundation</span>
-</div>
-<h3>Algorithms &amp; Data Structures</h3>
-<p class="lane">Computer science</p>
-<div class="dependency"><b>Requires blocks:</b> K0, K1, M1, M3</div>
-<div class="block-hours"><b>450 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">FND-007</span>
-<span class="rtitle">Introduction to Algorithms, Fourth Edition — selected core and advanced chapters</span>
-<span class="hours">450 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 450 active-learning hours
-        <span class="muted">(350–580 plausible)</span></p>
-<p><b>Scope:</b> Master central chapters and selected advanced chapters. Do not read every specialist chapter merely to claim completion.</p>
-<div><b>Mastery evidence</b><ul><li>Implement representative structures and algorithms.</li><li>Prove correctness and analyze complexity.</li><li>Pass graph and dynamic-programming assessments.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details></div>
-</article>
-<article class="block core" id="block-S0">
+<article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="77.0" data-importance-tier="very_high" id="block-S0">
 <div class="block-top">
 <span class="block-id">S0</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Machine-Level Systems</h3>
-<p class="lane">Systems</p>
+<p class="lane">Systems</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 77.0 · Very high</span><span class="importance-pill">30 downstream blocks</span><span class="importance-pill">15 explicit dependents</span><span class="importance-pill">10,530 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:77.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> K0, K1, C0</div>
 <div class="block-hours"><b>620 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">FND-009</span>
-<span class="rtitle">Computer Systems: A Programmer's Perspective, Third Edition, with representative labs</span>
+<span class="rtitle">Computer Systems: A Programmer's Perspective, Third Edition, with representative labs<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">620 h</span>
 </summary>
 <div class="resource-body">
@@ -616,14 +599,36 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete representative data, bomb, attack, cache, shell, malloc, and proxy-style labs or safe equivalents.</li><li>Trace source to assembly, linking, memory, processes, and I/O.</li><li>Debug memory and concurrency failures.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://csapp.cs.cmu.edu/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block engineering" id="block-E0">
+</article><article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="60.0" data-importance-tier="very_high" id="block-C1">
+<div class="block-top">
+<span class="block-id">C1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Algorithms &amp; Data Structures</h3>
+<p class="lane">Computer science</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 60.0 · Very high</span><span class="importance-pill">27 downstream blocks</span><span class="importance-pill">6 explicit dependents</span><span class="importance-pill">8,920 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:60.0%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> K0, K1, M1, M3</div>
+<div class="block-hours"><b>450 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">FND-007</span>
+<span class="rtitle">Introduction to Algorithms, Fourth Edition — selected core and advanced chapters<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">450 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 450 active-learning hours
+        <span class="muted">(350–580 plausible)</span></p>
+<p><b>Scope:</b> Master central chapters and selected advanced chapters. Do not read every specialist chapter merely to claim completion.</p>
+<div><b>Mastery evidence</b><ul><li>Implement representative structures and algorithms.</li><li>Prove correctness and analyze complexity.</li><li>Pass graph and dynamic-programming assessments.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article><article class="block engineering" data-dependency-weight="8.2" data-importance-tier="local" id="block-E0">
 <div class="block-top">
 <span class="block-id">E0</span>
 <span class="badge">Engineering branch</span>
 </div>
 <h3>Circuits &amp; Electronics</h3>
-<p class="lane">Electrical engineering</p>
+<p class="lane">Electrical engineering</p><div class="importance-row"><span class="importance-pill weight">Weight 8.2 · Local</span><span class="importance-pill">3 downstream blocks</span><span class="importance-pill">2 explicit dependents</span><span class="importance-pill">1,010 h downstream</span></div><div class="importance-meter"><span style="width:8.2%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M0, M3, PH1</div>
 <div class="block-hours"><b>300 h</b> total effort in this block</div>
 <div class="resources">
@@ -640,14 +645,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Solve complete circuit-analysis problem sets.</li><li>Simulate circuits with a SPICE-compatible tool.</li><li>Build or simulate amplifier, filter, and digital-interface labs.</li><li>Document measurement error and model limitations.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block advanced" id="block-M4">
+</article><article class="block advanced" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-M4">
 <div class="block-top">
 <span class="block-id">M4</span>
 <span class="badge">Advanced expansion</span>
 </div>
 <h3>Mathematics Consolidation</h3>
-<p class="lane">Mathematics</p>
+<p class="lane">Mathematics</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M2, M3</div>
 <div class="block-hours"><b>160 h</b> total effort in this block</div>
 <div class="resources">
@@ -664,8 +668,7 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete selected computational exercises connecting linear algebra, calculus, probability, and optimization.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://mml-book.github.io/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-</div>
+</article></div>
 </section>
 <section class="wave" id="wave-5">
 <div class="wave-head">
@@ -677,68 +680,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block core" id="block-N0">
-<div class="block-top">
-<span class="block-id">N0</span>
-<span class="badge">Core foundation</span>
-</div>
-<h3>Computer Networking</h3>
-<p class="lane">Networking</p>
-<div class="dependency"><b>Requires blocks:</b> C1, S0</div>
-<div class="block-hours"><b>400 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">FND-014</span>
-<span class="rtitle">Computer Networking: A Top-Down Approach, Ninth Edition, with Wireshark and socket labs</span>
-<span class="hours">400 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 400 active-learning hours
-        <span class="muted">(310–510 plausible)</span></p>
-<p><b>Scope:</b> Complete socket programming and Wireshark labs. Stanford CS144 can be used later for deeper TCP-stack implementation.</p>
-<div><b>Mastery evidence</b><ul><li>Build benign client-server software.</li><li>Analyze packet captures.</li><li>Explain DNS, HTTP, TLS roles, TCP state, routing, NAT, reliability, and congestion.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://www-net.cs.umass.edu/kurose_ross/" rel="noopener noreferrer" target="_blank">Open resource ↗</a><a class="resource-link secondary" href="https://cs144.github.io/" rel="noopener noreferrer" target="_blank">Stanford CS144 selected network-stack labs ↗</a></div></div>
-</details></div>
-</article>
-<article class="block core" id="block-P1">
-<div class="block-top">
-<span class="block-id">P1</span>
-<span class="badge">Core foundation</span>
-</div>
-<h3>Performance Engineering</h3>
-<p class="lane">Performance</p>
-<div class="dependency"><b>Requires blocks:</b> C0, C1, S0</div>
-<div class="block-hours"><b>400 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">FND-012</span>
-<span class="rtitle">Performance Engineering of Software Systems (MIT 6.172)</span>
-<span class="hours">400 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 400 active-learning hours
-        <span class="muted">(310–510 plausible)</span></p>
-<p><b>Scope:</b> Complete projects and before/after benchmark reports. Do not reduce the course to lecture viewing.</p>
-<div><b>Mastery evidence</b><ul><li>Produce reproducible benchmarks.</li><li>Profile and optimize a native program.</li><li>Explain cache and parallel scaling behavior.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details></div>
-</article>
-<article class="block core" id="block-S1">
+<article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="50.9" data-importance-tier="high" id="block-S1">
 <div class="block-top">
 <span class="block-id">S1</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Operating Systems Concepts + x86-64 Fluency</h3>
-<p class="lane">Systems</p>
+<p class="lane">Systems</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 50.9 · High</span><span class="importance-pill">21 downstream blocks</span><span class="importance-pill">9 explicit dependents</span><span class="importance-pill">6,700 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:50.9%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> S0</div>
 <div class="block-hours"><b>560 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">FND-010</span>
-<span class="rtitle">Operating Systems: Three Easy Pieces</span>
+<span class="rtitle">Operating Systems: Three Easy Pieces<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">360 h</span>
 </summary>
 <div class="resource-body">
@@ -748,10 +703,10 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete simulations and coding exercises.</li><li>Explain scheduling, address translation, synchronization, filesystems, storage, and crash consistency.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://pages.cs.wisc.edu/~remzi/OSTEP/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details>
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">BRG-001</span>
-<span class="rtitle">Architecture 1001: x86-64 Assembly</span>
+<span class="rtitle">Architecture 1001: x86-64 Assembly<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">200 h</span>
 </summary>
 <div class="resource-body">
@@ -761,14 +716,59 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Annotate disassemblies.</li><li>Trace calling conventions and stack frames.</li><li>Use an instruction-level debugger.</li><li>Compare compiler outputs.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Arch1001_x86-64_Asm+2021_v1/about" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block core" id="block-T0">
+</article><article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="39.6" data-importance-tier="moderate" id="block-N0">
+<div class="block-top">
+<span class="block-id">N0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Computer Networking</h3>
+<p class="lane">Networking</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 39.6 · Moderate</span><span class="importance-pill">16 downstream blocks</span><span class="importance-pill">8 explicit dependents</span><span class="importance-pill">4,900 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:39.6%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> C1, S0</div>
+<div class="block-hours"><b>400 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">FND-014</span>
+<span class="rtitle">Computer Networking: A Top-Down Approach, Ninth Edition, with Wireshark and socket labs<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">400 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 400 active-learning hours
+        <span class="muted">(310–510 plausible)</span></p>
+<p><b>Scope:</b> Complete socket programming and Wireshark labs. Stanford CS144 can be used later for deeper TCP-stack implementation.</p>
+<div><b>Mastery evidence</b><ul><li>Build benign client-server software.</li><li>Analyze packet captures.</li><li>Explain DNS, HTTP, TLS roles, TCP state, routing, NAT, reliability, and congestion.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://www-net.cs.umass.edu/kurose_ross/" rel="noopener noreferrer" target="_blank">Open resource ↗</a><a class="resource-link secondary" href="https://cs144.github.io/" rel="noopener noreferrer" target="_blank">Stanford CS144 selected network-stack labs ↗</a></div></div>
+</details></div>
+</article><article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="28.7" data-importance-tier="moderate" id="block-P1">
+<div class="block-top">
+<span class="block-id">P1</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Performance Engineering</h3>
+<p class="lane">Performance</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 28.7 · Moderate</span><span class="importance-pill">12 downstream blocks</span><span class="importance-pill">5 explicit dependents</span><span class="importance-pill">3,700 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:28.7%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> C0, C1, S0</div>
+<div class="block-hours"><b>400 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">FND-012</span>
+<span class="rtitle">Performance Engineering of Software Systems (MIT 6.172)<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">400 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 400 active-learning hours
+        <span class="muted">(310–510 plausible)</span></p>
+<p><b>Scope:</b> Complete projects and before/after benchmark reports. Do not reduce the course to lecture viewing.</p>
+<div><b>Mastery evidence</b><ul><li>Produce reproducible benchmarks.</li><li>Profile and optimize a native program.</li><li>Explain cache and parallel scaling behavior.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article><article class="block core" data-dependency-weight="16.6" data-importance-tier="local" id="block-T0">
 <div class="block-top">
 <span class="block-id">T0</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Formal Languages, Computability &amp; Complexity</h3>
-<p class="lane">Theory</p>
+<p class="lane">Theory</p><div class="importance-row"><span class="importance-pill weight">Weight 16.6 · Local</span><span class="importance-pill">8 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">2,490 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:16.6%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M1, C1</div>
 <div class="block-hours"><b>220 h</b> total effort in this block</div>
 <div class="resources">
@@ -785,14 +785,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete formal-language, automata, decidability, and reduction problem sets.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block engineering" id="block-EE1">
+</article><article class="block engineering" data-dependency-weight="5.2" data-importance-tier="local" id="block-EE1">
 <div class="block-top">
 <span class="block-id">EE1</span>
 <span class="badge">Engineering branch</span>
 </div>
 <h3>Signals &amp; Systems</h3>
-<p class="lane">Electrical engineering</p>
+<p class="lane">Electrical engineering</p><div class="importance-row"><span class="importance-pill weight">Weight 5.2 · Local</span><span class="importance-pill">2 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">710 h downstream</span></div><div class="importance-meter"><span style="width:5.2%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> M2, M3, E0</div>
 <div class="block-hours"><b>300 h</b> total effort in this block</div>
 <div class="resources">
@@ -809,14 +808,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete transform, convolution, sampling, and LTI-system problem sets.</li><li>Implement signal-analysis notebooks or programs.</li><li>Analyze one measured or simulated system in time and frequency domains.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block advanced" id="block-C2">
+</article><article class="block advanced" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-C2">
 <div class="block-top">
 <span class="block-id">C2</span>
 <span class="badge">Advanced expansion</span>
 </div>
 <h3>Advanced Algorithms</h3>
-<p class="lane">Computer science</p>
+<p class="lane">Computer science</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> C1</div>
 <div class="block-hours"><b>260 h</b> total effort in this block</div>
 <div class="resources">
@@ -833,8 +831,7 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete selected randomized, amortized, flow, optimization, approximation, and hardness problem sets.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-</div>
+</article></div>
 </section>
 <section class="wave" id="wave-6">
 <div class="wave-head">
@@ -846,44 +843,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block core" id="block-CR0">
-<div class="block-top">
-<span class="block-id">CR0</span>
-<span class="badge">Core foundation</span>
-</div>
-<h3>Applied Cryptography</h3>
-<p class="lane">Cryptography</p>
-<div class="dependency"><b>Requires blocks:</b> M1, M3, N0</div>
-<div class="block-hours"><b>300 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">FND-015</span>
-<span class="rtitle">A Graduate Course in Applied Cryptography, Version 0.6 — selected foundation chapters</span>
-<span class="hours">300 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 300 active-learning hours
-        <span class="muted">(230–380 plausible)</span></p>
-<p><b>Scope:</b> Study the foundational symmetric, public-key, signature, and key-exchange chapters. Advanced MPC, threshold, and zero-knowledge chapters are later specialization.</p>
-<div><b>Mastery evidence</b><ul><li>Solve selected exercises.</li><li>Analyze authenticated encryption, signatures, key exchange, hashing, and key management.</li><li>Implement only toy educational constructions.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://crypto.stanford.edu/~dabo/cryptobook/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details></div>
-</article>
-<article class="block core" id="block-S2">
+<article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="34.7" data-importance-tier="moderate" id="block-S2">
 <div class="block-top">
 <span class="block-id">S2</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Operating-System Implementation with xv6</h3>
-<p class="lane">Systems</p>
+<p class="lane">Systems</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 34.7 · Moderate</span><span class="importance-pill">16 downstream blocks</span><span class="importance-pill">4 explicit dependents</span><span class="importance-pill">4,630 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:34.7%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> K1, C0, S0, S1</div>
 <div class="block-hours"><b>550 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">FND-011</span>
-<span class="rtitle">Operating System Engineering (MIT 6.1810) with xv6/RISC-V</span>
+<span class="rtitle">Operating System Engineering (MIT 6.1810) with xv6/RISC-V<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">550 h</span>
 </summary>
 <div class="resource-body">
@@ -893,21 +866,43 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Complete a substantial xv6 lab set.</li><li>Implement system calls, virtual-memory changes, synchronization, filesystem changes, and at least one driver or networking task.</li><li>Defend kernel paths orally.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://pdos.csail.mit.edu/6.1810/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block core" id="block-T1">
+</article><article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="30.3" data-importance-tier="moderate" id="block-CR0">
+<div class="block-top">
+<span class="block-id">CR0</span>
+<span class="badge">Core foundation</span>
+</div>
+<h3>Applied Cryptography</h3>
+<p class="lane">Cryptography</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 30.3 · Moderate</span><span class="importance-pill">14 downstream blocks</span><span class="importance-pill">3 explicit dependents</span><span class="importance-pill">4,280 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:30.3%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> M1, M3, N0</div>
+<div class="block-hours"><b>300 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">FND-015</span>
+<span class="rtitle">A Graduate Course in Applied Cryptography, Version 0.6 — selected foundation chapters<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">300 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 300 active-learning hours
+        <span class="muted">(230–380 plausible)</span></p>
+<p><b>Scope:</b> Study the foundational symmetric, public-key, signature, and key-exchange chapters. Advanced MPC, threshold, and zero-knowledge chapters are later specialization.</p>
+<div><b>Mastery evidence</b><ul><li>Solve selected exercises.</li><li>Analyze authenticated encryption, signatures, key exchange, hashing, and key management.</li><li>Implement only toy educational constructions.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://crypto.stanford.edu/~dabo/cryptobook/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article><article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="17.3" data-importance-tier="local" id="block-T1">
 <div class="block-top">
 <span class="block-id">T1</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Compiler Construction</h3>
-<p class="lane">Compilers</p>
+<p class="lane">Compilers</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 17.3 · Local</span><span class="importance-pill">7 downstream blocks</span><span class="importance-pill">4 explicit dependents</span><span class="importance-pill">1,850 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:17.3%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> C0, C1, S0, T0</div>
 <div class="block-hours"><b>640 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">FND-013</span>
-<span class="rtitle">Engineering a Compiler, Third Edition, with one complete compiler project</span>
+<span class="rtitle">Engineering a Compiler, Third Edition, with one complete compiler project<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">640 h</span>
 </summary>
 <div class="resource-body">
@@ -917,38 +912,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Build a complete small compiler.</li><li>Implement parsing, semantic analysis, IR, CFGs, data-flow analysis, optimization, register allocation, and code generation.</li><li>Document lost source information.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://shop.elsevier.com/books/engineering-a-compiler/cooper/978-0-12-815412-0" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block engineering" id="block-EE2">
-<div class="block-top">
-<span class="block-id">EE2</span>
-<span class="badge">Engineering branch</span>
-</div>
-<h3>Microelectronics</h3>
-<p class="lane">Electrical engineering</p>
-<div class="dependency"><b>Requires blocks:</b> C0, PH1, E0, EE1</div>
-<div class="block-hours"><b>290 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">EE-003</span>
-<span class="rtitle">Microelectronic Devices and Circuits (MIT 6.012)</span>
-<span class="hours">290 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 290 active-learning hours
-        <span class="muted">(230–370 plausible)</span></p>
-<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
-<div><b>Mastery evidence</b><ul><li>Complete device and circuit problem sets.</li><li>Analyze MOS and amplifier circuits.</li><li>Complete a circuit-design problem or simulation project.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details></div>
-</article>
-<article class="block branch" id="block-G0">
+</article><article class="block branch" data-dependency-weight="6.3" data-importance-tier="local" id="block-G0">
 <div class="block-top">
 <span class="block-id">G0</span>
 <span class="badge">Branch-specific</span>
 </div>
 <h3>Computer Graphics</h3>
-<p class="lane">Graphics</p>
+<p class="lane">Graphics</p><div class="importance-row"><span class="importance-pill weight">Weight 6.3 · Local</span><span class="importance-pill">2 downstream blocks</span><span class="importance-pill">2 explicit dependents</span><span class="importance-pill">730 h downstream</span></div><div class="importance-meter"><span style="width:6.3%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> K0, M2, P1</div>
 <div class="block-hours"><b>380 h</b> total effort in this block</div>
 <div class="resources">
@@ -965,8 +935,30 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Build a renderer or implement core graphics algorithms.</li><li>Document transformations and performance.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-837-computer-graphics-fall-2012/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
+</article><article class="block engineering" data-dependency-weight="3.3" data-importance-tier="local" id="block-EE2">
+<div class="block-top">
+<span class="block-id">EE2</span>
+<span class="badge">Engineering branch</span>
 </div>
+<h3>Microelectronics</h3>
+<p class="lane">Electrical engineering</p><div class="importance-row"><span class="importance-pill weight">Weight 3.3 · Local</span><span class="importance-pill">1 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">420 h downstream</span></div><div class="importance-meter"><span style="width:3.3%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> C0, PH1, E0, EE1</div>
+<div class="block-hours"><b>290 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">EE-003</span>
+<span class="rtitle">Microelectronic Devices and Circuits (MIT 6.012)</span>
+<span class="hours">290 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 290 active-learning hours
+        <span class="muted">(230–370 plausible)</span></p>
+<p><b>Scope:</b> Use the source-defined scope and exercises.</p>
+<div><b>Mastery evidence</b><ul><li>Complete device and circuit problem sets.</li><li>Analyze MOS and amplifier circuits.</li><li>Complete a circuit-design problem or simulation project.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article></div>
 </section>
 <section class="wave" id="wave-7">
 <div class="wave-head">
@@ -978,20 +970,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block core" id="block-SEC0">
+<article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="27.0" data-importance-tier="moderate" id="block-SEC0">
 <div class="block-top">
 <span class="block-id">SEC0</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Foundations of Computer Security</h3>
-<p class="lane">Security</p>
+<p class="lane">Security</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 27.0 · Moderate</span><span class="importance-pill">10 downstream blocks</span><span class="importance-pill">7 explicit dependents</span><span class="importance-pill">3,120 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:27.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> S0, N0, S1, CR0</div>
 <div class="block-hours"><b>370 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">BRG-002</span>
-<span class="rtitle">Foundations of Computer Security (MIT 6.1600)</span>
+<span class="rtitle">Foundations of Computer Security (MIT 6.1600)<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">370 h</span>
 </summary>
 <div class="resource-body">
@@ -1001,21 +993,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Write threat models and security-property analyses.</li><li>Complete authorized fuzzing, isolation, runtime-defense, or symbolic-execution laboratories.</li><li>Report assumptions and limitations.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://61600.csail.mit.edu/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block specialization" id="block-W0">
+</article><article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="22.4" data-importance-tier="moderate" id="block-W0">
 <div class="block-top">
 <span class="block-id">W0</span>
 <span class="badge">Windows specialization</span>
 </div>
 <h3>Windows Internals I</h3>
-<p class="lane">Windows</p>
+<p class="lane">Windows</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 22.4 · Moderate</span><span class="importance-pill">11 downstream blocks</span><span class="importance-pill">2 explicit dependents</span><span class="importance-pill">2,880 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:22.4%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> K0, K1, C0, S0, S1, S2</div>
 <div class="block-hours"><b>420 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">WIN-SPEC-001</span>
-<span class="rtitle">Windows Internals, 7th Edition — Part 1</span>
+<span class="rtitle">Windows Internals, 7th Edition — Part 1<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">420 h</span>
 </summary>
 <div class="resource-body">
@@ -1025,38 +1016,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Explain a Windows process from creation to running threads and mapped address space.</li><li>Explain handles, objects, access tokens, virtual memory and I/O using Windows terminology.</li><li>Use Windows inspection tools to connect textbook concepts with observable system state.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/sysinternals/resources/windows-internals" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block advanced" id="block-ADV0">
-<div class="block-top">
-<span class="block-id">ADV0</span>
-<span class="badge">Advanced expansion</span>
-</div>
-<h3>Advanced Computer Architecture</h3>
-<p class="lane">Architecture</p>
-<div class="dependency"><b>Requires blocks:</b> C0, P1, EE2</div>
-<div class="block-hours"><b>420 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">ADV-ARCH-001</span>
-<span class="rtitle">Constructive Computer Architecture</span>
-<span class="hours">420 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 420 active-learning hours
-        <span class="muted">(320–570 plausible)</span></p>
-<p><b>Scope:</b> HDL exercises; pipelined processor; cache project; simulated multicore work</p>
-<div><b>Mastery evidence</b><ul><li>Implement or simulate a pipelined processor, cache, or multicore component.</li><li>Write an architecture design report.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://csg.csail.mit.edu/6.175/" rel="noopener noreferrer" target="_blank">MIT Constructive Computer Architecture ↗</a></div></div>
-</details></div>
-</article>
-<article class="block branch" id="block-G1">
+</article><article class="block branch" data-dependency-weight="3.1" data-importance-tier="local" id="block-G1">
 <div class="block-top">
 <span class="block-id">G1</span>
 <span class="badge">Branch-specific</span>
 </div>
 <h3>Game Engine Architecture</h3>
-<p class="lane">Game systems</p>
+<p class="lane">Game systems</p><div class="importance-row"><span class="importance-pill weight">Weight 3.1 · Local</span><span class="importance-pill">1 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">330 h downstream</span></div><div class="importance-meter"><span style="width:3.1%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> S0, G0</div>
 <div class="block-hours"><b>400 h</b> total effort in this block</div>
 <div class="resources">
@@ -1073,8 +1039,30 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Document the architecture of a small engine or engine subsystem.</li><li>Build or extend a legitimate game-system component.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://www.routledge.com/Game-Engine-Architecture-Two-Volume-Set/Gregory/p/book/9781041162599" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
+</article><article class="block advanced" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-ADV0">
+<div class="block-top">
+<span class="block-id">ADV0</span>
+<span class="badge">Advanced expansion</span>
 </div>
+<h3>Advanced Computer Architecture</h3>
+<p class="lane">Architecture</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> C0, P1, EE2</div>
+<div class="block-hours"><b>420 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ADV-ARCH-001</span>
+<span class="rtitle">Constructive Computer Architecture</span>
+<span class="hours">420 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 420 active-learning hours
+        <span class="muted">(320–570 plausible)</span></p>
+<p><b>Scope:</b> HDL exercises; pipelined processor; cache project; simulated multicore work</p>
+<div><b>Mastery evidence</b><ul><li>Implement or simulate a pipelined processor, cache, or multicore component.</li><li>Write an architecture design report.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://csg.csail.mit.edu/6.175/" rel="noopener noreferrer" target="_blank">MIT Constructive Computer Architecture ↗</a></div></div>
+</details></div>
+</article></div>
 </section>
 <section class="wave" id="wave-8">
 <div class="wave-head">
@@ -1086,13 +1074,36 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block core" id="block-SEC1">
+<article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="20.5" data-importance-tier="moderate" id="block-W1">
+<div class="block-top">
+<span class="block-id">W1</span>
+<span class="badge">Windows specialization</span>
+</div>
+<h3>Windows System Programming I</h3>
+<p class="lane">Windows</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 20.5 · Moderate</span><span class="importance-pill">10 downstream blocks</span><span class="importance-pill">2 explicit dependents</span><span class="importance-pill">2,580 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:20.5%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> K0, K1, S0, W0</div>
+<div class="block-hours"><b>300 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">WIN-SPEC-002</span>
+<span class="rtitle">Windows 10 System Programming — Part 1<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">300 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 300 active-learning hours
+        <span class="muted">(230–390 plausible)</span></p>
+<p><b>Scope:</b> Windows architecture from the programmer perspective; DLL fundamentals; objects and handles; process creation and management; threads</p>
+<div><b>Mastery evidence</b><ul><li>Build an owned process/thread inspection utility.</li><li>Build a small DLL/plugin-based application.</li><li>Explain each major API in terms of the Windows mechanism it changes.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://leanpub.com/windows10systemprogramming" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article><article class="block core" data-dependency-weight="13.3" data-importance-tier="local" id="block-SEC1">
 <div class="block-top">
 <span class="block-id">SEC1</span>
 <span class="badge">Core foundation</span>
 </div>
 <h3>Security Engineering</h3>
-<p class="lane">Security</p>
+<p class="lane">Security</p><div class="importance-row"><span class="importance-pill weight">Weight 13.3 · Local</span><span class="importance-pill">5 downstream blocks</span><span class="importance-pill">3 explicit dependents</span><span class="importance-pill">1,700 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:13.3%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> N0, S1, CR0, SEC0</div>
 <div class="block-hours"><b>350 h</b> total effort in this block</div>
 <div class="resources">
@@ -1109,38 +1120,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Produce structured analyses of assets, actors, trust boundaries, incentives, controls, and failure modes.</li><li>Compare security mechanisms across domains.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://www.cl.cam.ac.uk/archive/rja14/book.html" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block specialization" id="block-W1">
-<div class="block-top">
-<span class="block-id">W1</span>
-<span class="badge">Windows specialization</span>
-</div>
-<h3>Windows System Programming I</h3>
-<p class="lane">Windows</p>
-<div class="dependency"><b>Requires blocks:</b> K0, K1, S0, W0</div>
-<div class="block-hours"><b>300 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">WIN-SPEC-002</span>
-<span class="rtitle">Windows 10 System Programming — Part 1</span>
-<span class="hours">300 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 300 active-learning hours
-        <span class="muted">(230–390 plausible)</span></p>
-<p><b>Scope:</b> Windows architecture from the programmer perspective; DLL fundamentals; objects and handles; process creation and management; threads</p>
-<div><b>Mastery evidence</b><ul><li>Build an owned process/thread inspection utility.</li><li>Build a small DLL/plugin-based application.</li><li>Explain each major API in terms of the Windows mechanism it changes.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://leanpub.com/windows10systemprogramming" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details></div>
-</article>
-<article class="block advanced" id="block-SYS0">
+</article><article class="block advanced" data-dependency-weight="6.2" data-importance-tier="local" id="block-SYS0">
 <div class="block-top">
 <span class="block-id">SYS0</span>
 <span class="badge">Advanced expansion</span>
 </div>
 <h3>Computer System Engineering</h3>
-<p class="lane">Systems design</p>
+<p class="lane">Systems design</p><div class="importance-row"><span class="importance-pill weight">Weight 6.2 · Local</span><span class="importance-pill">2 downstream blocks</span><span class="importance-pill">2 explicit dependents</span><span class="importance-pill">700 h downstream</span></div><div class="importance-meter"><span style="width:6.2%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> K1, N0, S1, S2, SEC0</div>
 <div class="block-hours"><b>310 h</b> total effort in this block</div>
 <div class="resources">
@@ -1157,14 +1143,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Write and revise a substantial system-design report.</li><li>Analyze failure, naming, modularity, security, atomicity, and recovery.</li><li>Present and defend the design.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block branch" id="block-G2">
+</article><article class="block branch" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-G2">
 <div class="block-top">
 <span class="block-id">G2</span>
 <span class="badge">Branch-specific</span>
 </div>
 <h3>Game Construction</h3>
-<p class="lane">Game systems</p>
+<p class="lane">Game systems</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> K0, G0, G1</div>
 <div class="block-hours"><b>330 h</b> total effort in this block</div>
 <div class="resources">
@@ -1181,14 +1166,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Build a small game or engine component.</li><li>Conduct playtesting and write a postmortem.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/cms-611j-creating-video-games-fall-2014/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block background" id="block-H2">
+</article><article class="block background" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-H2">
 <div class="block-top">
 <span class="block-id">H2</span>
 <span class="badge">Background breadth</span>
 </div>
 <h3>Ethics, Law &amp; Institutions</h3>
-<p class="lane">Human context</p>
+<p class="lane">Human context</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> SEC0</div>
 <div class="block-hours"><b>380 h</b> total effort in this block</div>
 <div class="resources">
@@ -1218,8 +1202,7 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>policy analysis</li><li>case-study report</li></ul></div>
 <div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
 </details></div>
-</article>
-</div>
+</article></div>
 </section>
 <section class="wave" id="wave-9">
 <div class="wave-head">
@@ -1231,44 +1214,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block core" id="block-SEC2">
-<div class="block-top">
-<span class="block-id">SEC2</span>
-<span class="badge">Core foundation</span>
-</div>
-<h3>Advanced Computer Systems Security</h3>
-<p class="lane">Security</p>
-<div class="dependency"><b>Requires blocks:</b> S2, SEC0, SEC1</div>
-<div class="block-hours"><b>320 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">ADV-SEC-001</span>
-<span class="rtitle">Computer Systems Security</span>
-<span class="hours">320 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 320 active-learning hours
-        <span class="muted">(240–430 plausible)</span></p>
-<p><b>Scope:</b> lectures; paper readings; authorized labs; research critiques</p>
-<div><b>Mastery evidence</b><ul><li>Maintain a paper-review portfolio.</li><li>Complete controlled security labs and a design project.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-5660-computer-systems-security-spring-2024/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details></div>
-</article>
-<article class="block specialization" id="block-W2">
+<article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="16.2" data-importance-tier="local" id="block-W2">
 <div class="block-top">
 <span class="block-id">W2</span>
 <span class="badge">Windows specialization</span>
 </div>
 <h3>Windows System Programming II</h3>
-<p class="lane">Windows</p>
+<p class="lane">Windows</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 16.2 · Local</span><span class="importance-pill">7 downstream blocks</span><span class="importance-pill">3 explicit dependents</span><span class="importance-pill">1,850 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:16.2%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> C0, S0, P1, W1</div>
 <div class="block-hours"><b>320 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">WIN-SPEC-003</span>
-<span class="rtitle">Windows 10 System Programming — Part 2</span>
+<span class="rtitle">Windows 10 System Programming — Part 2<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">320 h</span>
 </summary>
 <div class="resource-body">
@@ -1278,21 +1237,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Build a visible lab program that allocates, protects and maps memory in several legitimate ways.</li><li>Measure working-set and memory effects using Windows inspection tools.</li><li>Explain large pages and NUMA effects conceptually and experimentally.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://leanpub.com/windows10systemprogrammingpart2" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block specialization" id="block-W3">
+</article><article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="8.5" data-importance-tier="local" id="block-W3">
 <div class="block-top">
 <span class="block-id">W3</span>
 <span class="badge">Windows specialization</span>
 </div>
 <h3>Windows Internals II — Analysis-Relevant Topics</h3>
-<p class="lane">Windows</p>
+<p class="lane">Windows</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 8.5 · Local</span><span class="importance-pill">3 downstream blocks</span><span class="importance-pill">3 explicit dependents</span><span class="importance-pill">640 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:8.5%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> W1</div>
 <div class="block-hours"><b>260 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">WIN-SUPPORT-001</span>
-<span class="rtitle">Windows Internals, 7th Edition — Part 2 (selected chapters)</span>
+<span class="rtitle">Windows Internals, 7th Edition — Part 2 (selected chapters)<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">260 h</span>
 </summary>
 <div class="resource-body">
@@ -1301,38 +1259,36 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
 <div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/sysinternals/resources/windows-internals" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block advanced" id="block-SYS1">
+</article><article class="block core aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="5.8" data-importance-tier="local" id="block-SEC2">
 <div class="block-top">
-<span class="block-id">SYS1</span>
-<span class="badge">Advanced expansion</span>
+<span class="block-id">SEC2</span>
+<span class="badge">Core foundation</span>
 </div>
-<h3>Distributed Systems</h3>
-<p class="lane">Systems design</p>
-<div class="dependency"><b>Requires blocks:</b> N0, S2, SEC1, SYS0</div>
-<div class="block-hours"><b>470 h</b> total effort in this block</div>
+<h3>Advanced Computer Systems Security</h3>
+<p class="lane">Security</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 5.8 · Local</span><span class="importance-pill">2 downstream blocks</span><span class="importance-pill">2 explicit dependents</span><span class="importance-pill">490 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:5.8%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> S2, SEC0, SEC1</div>
+<div class="block-hours"><b>320 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
-<span class="rid">ADV-SYS-001</span>
-<span class="rtitle">Distributed Systems</span>
-<span class="hours">470 h</span>
+<span class="rid">ADV-SEC-001</span>
+<span class="rtitle">Computer Systems Security<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">320 h</span>
 </summary>
 <div class="resource-body">
-<p><b>Estimated effort:</b> 470 active-learning hours
-        <span class="muted">(350–630 plausible)</span></p>
-<p><b>Scope:</b> readings; labs; design reports</p>
-<div><b>Mastery evidence</b><ul><li>Complete selected distributed-systems labs.</li><li>Write a failure and consistency analysis.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://pdos.csail.mit.edu/6.824/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+<p><b>Estimated effort:</b> 320 active-learning hours
+        <span class="muted">(240–430 plausible)</span></p>
+<p><b>Scope:</b> lectures; paper readings; authorized labs; research critiques</p>
+<div><b>Mastery evidence</b><ul><li>Maintain a paper-review portfolio.</li><li>Complete controlled security labs and a design project.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://ocw.mit.edu/courses/6-5660-computer-systems-security-spring-2024/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
 </details></div>
-</article>
-<article class="block background" id="block-H0">
+</article><article class="block background" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-H0">
 <div class="block-top">
 <span class="block-id">H0</span>
 <span class="badge">Background breadth</span>
 </div>
 <h3>Technical Writing</h3>
-<p class="lane">Human context</p>
+<p class="lane">Human context</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> SYS0</div>
 <div class="block-hours"><b>230 h</b> total effort in this block</div>
 <div class="resources">
@@ -1349,14 +1305,13 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>writing portfolio</li><li>before-and-after revisions</li><li>recorded presentation</li></ul></div>
 <div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
 </details></div>
-</article>
-<article class="block background" id="block-H3">
+</article><article class="block background" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-H3">
 <div class="block-top">
 <span class="block-id">H3</span>
 <span class="badge">Background breadth</span>
 </div>
 <h3>Economics &amp; Science/Technology/Society</h3>
-<p class="lane">Human context</p>
+<p class="lane">Human context</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> SEC1</div>
 <div class="block-hours"><b>420 h</b> total effort in this block</div>
 <div class="resources">
@@ -1386,8 +1341,30 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>sociotechnical analysis paper</li></ul></div>
 <div class="no-link-note">Exact study resource not yet selected in the source registry.</div></div>
 </details></div>
-</article>
+</article><article class="block advanced" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-SYS1">
+<div class="block-top">
+<span class="block-id">SYS1</span>
+<span class="badge">Advanced expansion</span>
 </div>
+<h3>Distributed Systems</h3>
+<p class="lane">Systems design</p><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> N0, S2, SEC1, SYS0</div>
+<div class="block-hours"><b>470 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource">
+<summary>
+<span class="rid">ADV-SYS-001</span>
+<span class="rtitle">Distributed Systems</span>
+<span class="hours">470 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 470 active-learning hours
+        <span class="muted">(350–630 plausible)</span></p>
+<p><b>Scope:</b> readings; labs; design reports</p>
+<div><b>Mastery evidence</b><ul><li>Complete selected distributed-systems labs.</li><li>Write a failure and consistency analysis.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://pdos.csail.mit.edu/6.824/" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article></div>
 </section>
 <section class="wave" id="wave-10">
 <div class="wave-head">
@@ -1399,44 +1376,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block specialization" id="block-MX0">
-<div class="block-top">
-<span class="block-id">MX0</span>
-<span class="badge">Windows specialization</span>
-</div>
-<h3>RandomX Internals</h3>
-<p class="lane">Cryptomining internals</p>
-<div class="dependency"><b>Requires blocks:</b> K0, C0, S0, P1, S1, T1, W2</div>
-<div class="block-hours"><b>250 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">WIN-SPEC-008</span>
-<span class="rtitle">RandomX Specification, Design Documentation, and Reference Implementation</span>
-<span class="hours">250 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 250 active-learning hours
-        <span class="muted">(180–340 plausible)</span></p>
-<p><b>Scope:</b> RandomX design goals; virtual machine; generated programs; JIT translation; cache and dataset</p>
-<div><b>Mastery evidence</b><ul><li>Trace one computation path from API entry to VM/JIT execution.</li><li>Map source code to generated/compiled machine behavior.</li><li>Profile controlled benchmark runs and explain cache, memory and CPU effects.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://github.com/tevador/RandomX" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
-</details></div>
-</article>
-<article class="block specialization" id="block-W4">
+<article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="8.4" data-importance-tier="local" id="block-W4">
 <div class="block-top">
 <span class="block-id">W4</span>
 <span class="badge">Windows specialization</span>
 </div>
 <h3>PE/COFF, Loader &amp; Software Trust</h3>
-<p class="lane">Windows binaries</p>
+<p class="lane">Windows binaries</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 8.4 · Local</span><span class="importance-pill">4 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">1,040 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:8.4%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> S0, S1, CR0, T1, W2</div>
 <div class="block-hours"><b>240 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">WIN-SPEC-004</span>
-<span class="rtitle">Microsoft PE/COFF + DLL/Loader + Authenticode Documentation</span>
+<span class="rtitle">Microsoft PE/COFF + DLL/Loader + Authenticode Documentation<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">240 h</span>
 </summary>
 <div class="resource-body">
@@ -1446,21 +1399,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Parse important PE structures from owned binaries.</li><li>Map file offsets, RVAs and loaded virtual addresses.</li><li>Explain how imports, relocations and DLL loading affect runtime execution.</li><li>Compare signed and intentionally modified owned binaries and document integrity consequences.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/windows/win32/debug/pe-format" rel="noopener noreferrer" target="_blank">PE/COFF specification ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-functions" rel="noopener noreferrer" target="_blank">DLL functions ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/windows/win32/dlls/run-time-dynamic-linking" rel="noopener noreferrer" target="_blank">Runtime dynamic linking ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/windows/win32/seccrypto/signtool" rel="noopener noreferrer" target="_blank">SignTool / signing ↗</a></div></div>
 </details></div>
-</article>
-<article class="block specialization" id="block-W5">
+</article><article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="5.8" data-importance-tier="local" id="block-W5">
 <div class="block-top">
 <span class="block-id">W5</span>
 <span class="badge">Windows specialization</span>
 </div>
 <h3>Windows Observability — Sysinternals &amp; Sysmon</h3>
-<p class="lane">Windows telemetry</p>
+<p class="lane">Windows telemetry</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 5.8 · Local</span><span class="importance-pill">2 downstream blocks</span><span class="importance-pill">2 explicit dependents</span><span class="importance-pill">490 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:5.8%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> N0, SEC0, W0, W3</div>
 <div class="block-hours"><b>150 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">WIN-SUPPORT-002</span>
-<span class="rtitle">Microsoft Sysinternals Suite + Sysmon</span>
+<span class="rtitle">Microsoft Sysinternals Suite + Sysmon<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">150 h</span>
 </summary>
 <div class="resource-body">
@@ -1469,8 +1421,30 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <p><b>Scope:</b> Use the source-defined scope and exercises.</p>
 <div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite" rel="noopener noreferrer" target="_blank">Sysinternals Suite ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon" rel="noopener noreferrer" target="_blank">Sysmon ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon" rel="noopener noreferrer" target="_blank">Process Monitor ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer" rel="noopener noreferrer" target="_blank">Process Explorer ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/vmmap" rel="noopener noreferrer" target="_blank">VMMap ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/sysinternals/downloads/sigcheck" rel="noopener noreferrer" target="_blank">Sigcheck ↗</a></div></div>
 </details></div>
-</article>
+</article><article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="4.7" data-importance-tier="local" id="block-MX0">
+<div class="block-top">
+<span class="block-id">MX0</span>
+<span class="badge">Windows specialization</span>
 </div>
+<h3>RandomX Internals</h3>
+<p class="lane">Cryptomining internals</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 4.7 · Local</span><span class="importance-pill">2 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">510 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:4.7%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> K0, C0, S0, P1, S1, T1, W2</div>
+<div class="block-hours"><b>250 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">WIN-SPEC-008</span>
+<span class="rtitle">RandomX Specification, Design Documentation, and Reference Implementation<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">250 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 250 active-learning hours
+        <span class="muted">(180–340 plausible)</span></p>
+<p><b>Scope:</b> RandomX design goals; virtual machine; generated programs; JIT translation; cache and dataset</p>
+<div><b>Mastery evidence</b><ul><li>Trace one computation path from API entry to VM/JIT execution.</li><li>Map source code to generated/compiled machine behavior.</li><li>Profile controlled benchmark runs and explain cache, memory and CPU effects.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://github.com/tevador/RandomX" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></div>
+</details></div>
+</article></div>
 </section>
 <section class="wave" id="wave-11">
 <div class="wave-head">
@@ -1482,44 +1456,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block specialization" id="block-MX1">
-<div class="block-top">
-<span class="block-id">MX1</span>
-<span class="badge">Windows specialization</span>
-</div>
-<h3>XMRig Architecture</h3>
-<p class="lane">Cryptomining internals</p>
-<div class="dependency"><b>Requires blocks:</b> K0, K1, S0, N0, P1, W2, MX0</div>
-<div class="block-hours"><b>320 h</b> total effort in this block</div>
-<div class="resources">
-<details class="resource">
-<summary>
-<span class="rid">WIN-SPEC-009</span>
-<span class="rtitle">XMRig Source Code + Official Windows/Build/Benchmark Documentation</span>
-<span class="hours">320 h</span>
-</summary>
-<div class="resource-body">
-<p><b>Estimated effort:</b> 320 active-learning hours
-        <span class="muted">(240–430 plausible)</span></p>
-<p><b>Scope:</b> startup and configuration; Windows build organization; CPU and hardware topology detection; worker/thread management; RandomX backend integration</p>
-<div><b>Mastery evidence</b><ul><li>Draw the XMRig architecture from source.</li><li>Build it in an isolated Windows lab.</li><li>Profile offline benchmark mode.</li><li>Map selected source subsystems to disassembly and Windows runtime artifacts.</li></ul></div>
-<div class="resource-links"><a class="resource-link" href="https://github.com/xmrig/xmrig" rel="noopener noreferrer" target="_blank">XMRig source ↗</a><a class="resource-link secondary" href="https://xmrig.com/docs/miner" rel="noopener noreferrer" target="_blank">XMRig documentation ↗</a><a class="resource-link secondary" href="https://xmrig.com/docs/miner/build/windows" rel="noopener noreferrer" target="_blank">Windows build docs ↗</a><a class="resource-link secondary" href="https://xmrig.com/docs/miner/benchmark" rel="noopener noreferrer" target="_blank">Benchmark docs ↗</a></div></div>
-</details></div>
-</article>
-<article class="block specialization" id="block-W6">
+<article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="6.7" data-importance-tier="local" id="block-W6">
 <div class="block-top">
 <span class="block-id">W6</span>
 <span class="badge">Windows specialization</span>
 </div>
 <h3>WinDbg Dynamic Analysis</h3>
-<p class="lane">Reverse engineering</p>
+<p class="lane">Reverse engineering</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 6.7 · Local</span><span class="importance-pill">3 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">850 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:6.7%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> S0, S1, T1, W4</div>
 <div class="block-hours"><b>190 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">WIN-SPEC-005</span>
-<span class="rtitle">WinDbg — Microsoft User-Mode Debugging Material</span>
+<span class="rtitle">WinDbg — Microsoft User-Mode Debugging Material<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">190 h</span>
 </summary>
 <div class="resource-body">
@@ -1529,8 +1479,30 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Debug owned source-available programs at source and assembly levels.</li><li>Repeat analysis with stripped binaries.</li><li>Recover control flow, parameters, modules and thread behavior dynamically.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg" rel="noopener noreferrer" target="_blank">WinDbg getting started ↗</a><a class="resource-link secondary" href="https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/" rel="noopener noreferrer" target="_blank">WinDbg documentation ↗</a></div></div>
 </details></div>
-</article>
+</article><article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="2.8" data-importance-tier="local" id="block-MX1">
+<div class="block-top">
+<span class="block-id">MX1</span>
+<span class="badge">Windows specialization</span>
 </div>
+<h3>XMRig Architecture</h3>
+<p class="lane">Cryptomining internals</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 2.8 · Local</span><span class="importance-pill">1 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">190 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:2.8%"></span></div>
+<div class="dependency"><b>Requires blocks:</b> K0, K1, S0, N0, P1, W2, MX0</div>
+<div class="block-hours"><b>320 h</b> total effort in this block</div>
+<div class="resources">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
+<summary>
+<span class="rid">WIN-SPEC-009</span>
+<span class="rtitle">XMRig Source Code + Official Windows/Build/Benchmark Documentation<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
+<span class="hours">320 h</span>
+</summary>
+<div class="resource-body">
+<p><b>Estimated effort:</b> 320 active-learning hours
+        <span class="muted">(240–430 plausible)</span></p>
+<p><b>Scope:</b> startup and configuration; Windows build organization; CPU and hardware topology detection; worker/thread management; RandomX backend integration</p>
+<div><b>Mastery evidence</b><ul><li>Draw the XMRig architecture from source.</li><li>Build it in an isolated Windows lab.</li><li>Profile offline benchmark mode.</li><li>Map selected source subsystems to disassembly and Windows runtime artifacts.</li></ul></div>
+<div class="resource-links"><a class="resource-link" href="https://github.com/xmrig/xmrig" rel="noopener noreferrer" target="_blank">XMRig source ↗</a><a class="resource-link secondary" href="https://xmrig.com/docs/miner" rel="noopener noreferrer" target="_blank">XMRig documentation ↗</a><a class="resource-link secondary" href="https://xmrig.com/docs/miner/build/windows" rel="noopener noreferrer" target="_blank">Windows build docs ↗</a><a class="resource-link secondary" href="https://xmrig.com/docs/miner/benchmark" rel="noopener noreferrer" target="_blank">Benchmark docs ↗</a></div></div>
+</details></div>
+</article></div>
 </section>
 <section class="wave" id="wave-12">
 <div class="wave-head">
@@ -1542,20 +1514,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block specialization" id="block-W7">
+<article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="4.7" data-importance-tier="local" id="block-W7">
 <div class="block-top">
 <span class="block-id">W7</span>
 <span class="badge">Windows specialization</span>
 </div>
 <h3>Ghidra Static Reverse Engineering</h3>
-<p class="lane">Reverse engineering</p>
+<p class="lane">Reverse engineering</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 4.7 · Local</span><span class="importance-pill">2 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">490 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:4.7%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> C1, S0, S1, T1, W6</div>
 <div class="block-hours"><b>360 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">WIN-SPEC-006</span>
-<span class="rtitle">Ghidra + The Ghidra Book, 2nd Edition</span>
+<span class="rtitle">Ghidra + The Ghidra Book, 2nd Edition<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">360 h</span>
 </summary>
 <div class="resource-body">
@@ -1565,8 +1537,7 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Recover the architecture of stripped owned binaries.</li><li>Compare two builds and explain binary-level differences.</li><li>Perform harmless behavioral patches on toy/owned binaries and validate them dynamically.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://github.com/NationalSecurityAgency/ghidra" rel="noopener noreferrer" target="_blank">Ghidra ↗</a><a class="resource-link secondary" href="https://nostarch.com/ghidra-book-2e" rel="noopener noreferrer" target="_blank">The Ghidra Book, 2e ↗</a></div></div>
 </details></div>
-</article>
-</div>
+</article></div>
 </section>
 <section class="wave" id="wave-13">
 <div class="wave-head">
@@ -1578,20 +1549,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block specialization" id="block-W8">
+<article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="2.8" data-importance-tier="local" id="block-W8">
 <div class="block-top">
 <span class="block-id">W8</span>
 <span class="badge">Windows specialization</span>
 </div>
 <h3>Windows Malware Analysis with FLARE</h3>
-<p class="lane">Malware analysis</p>
+<p class="lane">Malware analysis</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 2.8 · Local</span><span class="importance-pill">1 downstream blocks</span><span class="importance-pill">1 explicit dependents</span><span class="importance-pill">190 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:2.8%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> SEC0, SEC2, W3, W5, W7</div>
 <div class="block-hours"><b>300 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">WIN-SPEC-007</span>
-<span class="rtitle">Mandiant FLARE Learning Hub + FLARE-VM</span>
+<span class="rtitle">Mandiant FLARE Learning Hub + FLARE-VM<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">300 h</span>
 </summary>
 <div class="resource-body">
@@ -1601,8 +1572,7 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Analyze authorized Windows malware-training samples and produce reproducible reports.</li><li>Correlate Ghidra, WinDbg and behavioral observations.</li><li>Separate direct observations from inference.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://github.com/mandiant/flare-learning-hub" rel="noopener noreferrer" target="_blank">FLARE Learning Hub ↗</a><a class="resource-link secondary" href="https://github.com/mandiant/flare-vm" rel="noopener noreferrer" target="_blank">FLARE-VM ↗</a></div></div>
 </details></div>
-</article>
-</div>
+</article></div>
 </section>
 <section class="wave" id="wave-14">
 <div class="wave-head">
@@ -1614,20 +1584,20 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 </div>
 <p class="wave-note">Blocks here have no dependency on one another. Start any whose own required blocks are complete; unrelated unfinished branches do not hold them back.</p>
 <div class="grid">
-<article class="block specialization" id="block-SYN">
+<article class="block specialization aggressive-minimum" data-aggressive-minimum="full" data-dependency-weight="0.0" data-importance-tier="terminal" id="block-SYN">
 <div class="block-top">
 <span class="block-id">SYN</span>
 <span class="badge">Windows specialization</span>
 </div>
 <h3>Windows Cryptojacking Campaign Synthesis</h3>
-<p class="lane">Synthesis</p>
+<p class="lane">Synthesis</p><span class="aggressive-minimum-block-note">★ Aggressive minimum path</span><div class="importance-row"><span class="importance-pill weight">Weight 0.0 · Terminal</span><span class="importance-pill">0 downstream blocks</span><span class="importance-pill">0 explicit dependents</span><span class="importance-pill">0 h downstream</span><span class="importance-pill target">✓ SYN path</span></div><div class="importance-meter"><span style="width:0.0%"></span></div>
 <div class="dependency"><b>Requires blocks:</b> N0, SEC0, SEC2, W3, W5, MX1, W8</div>
 <div class="block-hours"><b>190 h</b> total effort in this block</div>
 <div class="resources">
-<details class="resource">
+<details class="resource aggressive-minimum-resource" data-aggressive-minimum="true">
 <summary>
 <span class="rid">WIN-SPEC-010</span>
-<span class="rtitle">Real Windows Cryptojacking Campaign Reconstruction — Microsoft Case Studies + MITRE ATT&amp;CK Compute Hijacking</span>
+<span class="rtitle">Real Windows Cryptojacking Campaign Reconstruction — Microsoft Case Studies + MITRE ATT&amp;CK Compute Hijacking<span class="aggressive-minimum-badge">★ Aggressive minimum</span></span>
 <span class="hours">190 h</span>
 </summary>
 <div class="resource-body">
@@ -1637,8 +1607,7 @@ border:1px solid #315269;border-radius:18px;padding:20px 22px;margin:0 0 28px}
 <div><b>Mastery evidence</b><ul><li>Reconstruct a campaign from public technical evidence.</li><li>Produce a timeline and component graph.</li><li>Separate direct evidence from inference and vendor assertions.</li><li>Explain alternative benign interpretations where applicable.</li></ul></div>
 <div class="resource-links"><a class="resource-link" href="https://www.microsoft.com/en-us/security/blog/2026/05/26/poisoned-search-results-gpu-mining-cryptojacking-campaign-abusing-screenconnect-microsoft-net-utilities/" rel="noopener noreferrer" target="_blank">Microsoft case study ↗</a><a class="resource-link secondary" href="https://attack.mitre.org/techniques/T1496/001/" rel="noopener noreferrer" target="_blank">MITRE ATT&amp;CK T1496.001 ↗</a></div></div>
 </details></div>
-</article>
-</div>
+</article></div>
 </section>
 <div class="footer-note">
     Learning hours represent focused active work: instruction/reading, exercises, laboratories/projects, assessment/reporting/oral explanation, and spaced memory consolidation/revalidation. They are effort estimates, not calendar promises. Practical malicious-software work remains limited to owned, toy, CTF, isolated, simulated, or explicitly authorized environments.
